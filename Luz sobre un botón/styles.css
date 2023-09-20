@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.button {
+    padding: 15px 30px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: none;
+    font-size: 16px;
+    margin: 10px;
+    position: relative;
+    /* Cambiar el tipo de cursor */
+    cursor: pointer;
+    /* Modificar el ángulo en función de la fuente de luz */
+    box-shadow: 2px 8px 10px 1px rgba(110, 185, 255, 0.822);
+
+}
+
+
+.button:focus {
+    outline: none;
+}
+
+.button:active {
+    transform: translateY(2px);
+    /* Quitar la sombra al hacer clic */
+    box-shadow: none;
+}
