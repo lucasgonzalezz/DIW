@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link id="estilosCSS" rel="stylesheet" href="stylesClaro.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <div id="contenedor">
+    <div id="header">
+      <div id="titulo">
+        <h1>PORTAFOLIO</h1>
+      </div>
+      <div id="menu">
+        <ul>
+          <!-- Elementos de menú -->
+          <li>INICIO</li>
+          <li>PROYECTOS</li>
+          <li>BLOG</li>
+          <li>CONTACTO</li>
+        </ul>
+      </div>
+      <!-- Botones para cambiar entre los modos claro y oscuro -->
+      <button type="button" id="modoClaroBtn" class="btn btn-light">Claro</button>
+      <button type="button" id="modoOscuroBtn" class="btn btn-light">Oscuro</button>
+    </div>
+    <div class="flex">
+      <div class="categorias">
+        <div class="linea">
+          ¿Qué quieres ver?
+        </div>
+        <!-- Categorías -->
+        <div class="categoria">WEBS</div>
+        <div class="categoria">APPS</div>
+        <div class="categoria">DISEÑOS</div>
+        <div class="categoria">OTROS</div>
+      </div>
+      <div class="cajas">
+        <div class="fila1">
+          <!-- Elementos de proyecto, incluyendo imágenes y texto -->
+          <img src="https://i.redd.it/6ihl9vurecz01.png">
+          <p>Nombre proyecto</p>
+          <p>Sitio web</p>
+        </div>
+        <!-- (Se repite este bloque de elementos varias veces) -->
+      </div>
+    </div>
+    <footer>
+      <div id="titulo2">
+        <h1>PORTAFOLIO (Lucas González)</h1>
+      </div>
+    </footer>
+  </div>
+</body>
+
+<!-- Script JavaScript para cambiar entre modos claro y oscuro -->
+<script>
+  const modoClaroBtn = document.getElementById('modoClaroBtn');
+  const modoOscuroBtn = document.getElementById('modoOscuroBtn');
+  modoClaroBtn.disabled = true;
+
+  // Función para cambiar al modo claro
+  function activarModoClaro() {
+    document.getElementById('estilosCSS').setAttribute('href', 'stylesClaro.css');
+    modoClaroBtn.disabled = true;
+    modoOscuroBtn.disabled = false;
+  }
+
+  // Función para cambiar al modo oscuro
+  function activarModoOscuro() {
+    document.getElementById('estilosCSS').setAttribute('href', 'stylesOscuro.css');
+    modoOscuroBtn.disabled = true;
+    modoClaroBtn.disabled = false;
+  }
+
+  // Agregar eventos a los botones para cambiar entre modos
+  modoClaroBtn.addEventListener('click', activarModoClaro);
+  modoOscuroBtn.addEventListener('click', activarModoOscuro);
+</script>
+</html>

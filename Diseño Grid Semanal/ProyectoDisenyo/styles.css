@@ -1,0 +1,132 @@
+/* Establece valores iniciales para el cuerpo de la página */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* Estiliza el encabezado de la página */
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estiliza el logotipo en el encabezado */
+header .logo {
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+/* Estiliza la navegación en el encabezado */
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+/* Estiliza la lista no ordenada en la navegación */
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+/* Estiliza los elementos de la lista en la navegación */
+header li {
+    margin-left: 20px;
+}
+
+/* Estiliza el contenido principal de la página */
+.content {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    align-items: flex-start;
+}
+
+/* Estiliza la barra lateral en el contenido */
+.content aside .sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: relative;
+    top: 1.5rem;
+}
+
+/* Estiliza el título en la barra lateral */
+.content aside .sidebar .title {
+    display: block;
+    margin-left: 25px;
+    font-size: 24px;
+    width: 62%;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+/* Estiliza la lista no ordenada en la barra lateral */
+.content aside .sidebar ul {
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estiliza los elementos de la lista en la barra lateral */
+.content aside .sidebar li {
+    padding: 10px;
+}
+
+/* Estiliza los botones dentro de la lista en la barra lateral */
+.content aside .sidebar li button {
+    background-color: lightgray;
+    padding: 15px 20px;
+    height: 3rem;
+    width: 12rem;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Estiliza el contenedor principal en el contenido */
+.content .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estiliza las tarjetas dentro del contenedor */
+.content .container .card {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 0;
+    width: 250px;
+}
+
+/* Estiliza las imágenes dentro de las tarjetas */
+.content .container .card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estiliza el texto dentro de las tarjetas */
+.content .container .card p {
+    opacity: 0.6;
+}
+
+/* Estiliza el pie de página */
+footer h1 {
+    font-style: italic;
+    opacity: 0.6;
+    margin-left: 20px;
+    margin-top: 10px;
+}

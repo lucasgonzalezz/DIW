@@ -1,0 +1,140 @@
+// Importar una fuente desde Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+
+// Variables para estilos
+$primary-font: 'Edu TAS Beginner', cursive;       // Fuente principal
+$font-size-large: large;                          // Tamaño de fuente grande
+$marginLeftCategoria: 15px;                        // Margen izquierdo para las categorías
+$fontStyle: italic;                               // Estilo de fuente en cursiva
+$display: flex;                                     // Estilo de visualización flex
+$flexDirectionColumn: column;                       // Dirección de flex como columna
+$flexDirectionFila: row;                           // Dirección de flex como fila
+$alineacionTexto: center;                         // Alineación de texto en el centro
+$marginLeftP: 5px;                                // Margen izquierdo para elementos de párrafo
+$tamanoCategoria: 200px;                           // Tamaño de las categorías
+
+// Aplicar la fuente principal a todo el cuerpo
+body {
+  font-family: $primary-font;
+}
+
+#header {
+  display: $display;                      // Establecer estilo de visualización flex
+  flex-direction: $flexDirectionFila;      // Dirección de flex como fila
+  align-items: baseline;                    // Alinear elementos a la línea base
+
+  @media screen and (max-width: 670px) {
+    flex-direction: $flexDirectionColumn;   // En pantallas pequeñas, dirección de flex como columna
+    justify-content: space-between;         // Alinear elementos uniformemente
+
+    #menu {
+      ul {
+        margin-top: 0;    // Eliminar el margen superior para las listas ul
+      }
+
+      #titulo {
+        margin: 0 auto;     // Margen automático para el título
+      }
+    }
+  }
+}
+
+#titulo {
+  flex-grow: 5;       // Hacer que el título ocupe más espacio en flex
+}
+
+#menu {
+  flex-grow: 1;      // Hacer que el menú ocupe menos espacio en flex
+}
+
+.btn {
+  margin-right: 6px;       // Margen derecho para botones
+}
+
+#contenedor {
+  justify-content: space-between;         // Alinear elementos uniformemente
+  align-items: center;                 // Alinear elementos al centro
+  padding: 25px;                          // Agregar relleno
+}
+
+#titulo h1 {
+  padding-bottom: 10px;                   // Relleno inferior
+  margin-left: $marginLeftCategoria;      // Margen izquierdo para el título
+  font-style: $fontStyle;                 // Establecer estilo de fuente en cursiva
+}
+
+#menu {
+  ul {
+    display: $display;              // Establecer estilo de visualización flex para listas ul
+    list-style-type: none;            // Eliminar marcadores de lista
+
+    li {
+      margin-right: 20px;             // Margen derecho para elementos de lista
+    }
+  }
+}
+
+.linea {
+  margin-top: 30px;                                   // Margen superior
+  padding-bottom: 5px;                                // Relleno inferior
+  margin-left: $marginLeftCategoria;                    // Margen izquierdo
+  font-size: $font-size-large;                        // Tamaño de fuente grande
+  box-sizing: border-box;                             // Asegurar que el tamaño de caja incluya relleno y borde
+  width: $tamanoCategoria;                            // Tamaño de categoría
+  text-align: $alineacionTexto;                       // Alineación de texto en el centro
+}
+
+.categoria {
+  margin-bottom: 20px;                                // Margen inferior
+  margin-left: $marginLeftCategoria;                // Margen izquierdo
+  text-align: $alineacionTexto;                     // Alineación de texto en el centro
+  width: $tamanoCategoria;                         // Tamaño de categoría
+  height: 50px;                                    // Altura
+  padding: 14px;                                  // Relleno
+
+  flex-direction: $flexDirectionFila;             // Dirección de flex como fila
+  margin-top: 10px;                               // Margen superior
+  box-sizing: border-box;                         // Asegurar que el tamaño de caja incluya relleno y borde
+}
+
+.cajas {
+  display: $display;                            // Establecer estilo de visualización flex
+  flex-wrap: wrap;                              // Permitir que los elementos se envuelvan en múltiples líneas
+  margin-right: 10px;                          // Margen derecho
+  margin-left: 12px;                           // Margen izquierdo
+  margin-top: 20px;                           // Margen superior
+  flex-direction: $flexDirectionFila;         // Dirección de flex como fila
+}
+
+.flex {
+  display: $display;                          // Establecer estilo de visualización flex
+  flex-direction: $flexDirectionFila;         // Dirección de flex como fila
+}
+
+.fila1 {
+  margin-right: 15px;                         // Margen derecho
+  margin-bottom: 15px;                        // Margen inferior
+  width: 280px;                               // Ancho
+  display: $display;                          // Establecer estilo de visualización flex
+  flex-direction: $flexDirectionColumn;       // Dirección de flex como columna
+  flex-grow: 1;                              // Hacer que el elemento crezca en el flex
+
+  p {
+    margin: 0;                               // Margen a cero
+
+    &:nth-child(3) {
+      margin-left: $marginLeftP;            // Margen izquierdo para el tercer párrafo
+    }
+
+    &:nth-child(2) {
+      margin-top: 7px;                      // Margen superior para el segundo párrafo
+      margin-left: $marginLeftP;            // Margen izquierdo para el segundo párrafo
+    }
+  }
+}
+
+#titulo2 {
+  margin: 0;                                // Margen a cero
+  margin-left: $marginLeftCategoria;        // Margen izquierdo para el título
+  font-style: $fontStyle;                   // Establecer estilo de fuente en cursiva
+}

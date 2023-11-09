@@ -1,0 +1,60 @@
+// Variables
+$primary-color: #3498db;
+$secondary-color: #e74c3c;
+$font-family: 'Arial', sans-serif;
+
+// Estilos generales
+body {
+  font-family: $font-family;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+// Botones
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: $primary-color;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+// Encabezado
+.header {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 20px;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+// Pie de página
+.footer {
+  background-color: $secondary-color;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}

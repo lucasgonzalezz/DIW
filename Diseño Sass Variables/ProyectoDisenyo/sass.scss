@@ -1,0 +1,141 @@
+// Variables
+$color-fondo: white;
+$color-borde: #ddd;
+$color-fuente: Arial, Helvetica, sans-serif;
+$color-botones: lightgray;
+
+$espaciado: 20px;
+
+$tamano-logo: 20px;
+$tamano-titulo: 24px;
+$tamano-tarjeta: 250px;
+
+$alto-botones: 3rem;
+$ancho-botones: 12rem;
+
+$opacidad-texto: 0.6;
+
+$margen-logo: 20px;
+$margen-tarjetas: 10px;
+$margen-boton: 10px;
+
+$flex-direccion: column;
+
+// Estilos CSS
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: $color-fuente;
+    background-color: $color-fondo;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: $espaciado 0;
+    border-bottom: 1px solid $color-borde;
+}
+
+header .logo {
+    font-weight: bold;
+    font-style: italic;
+    margin-left: $margen-logo;
+    font-size: $tamano-logo;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: $margen-logo;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header li {
+    margin-left: $margen-logo;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    align-items: flex-start;
+}
+
+.content aside .sidebar {
+    display: flex;
+    flex-direction: $flex-direccion;
+    background-color: $color-fondo;
+    position: relative;
+    top: 1.5rem;
+}
+
+.content aside .sidebar .title {
+    display: block;
+    margin-left: $margen-logo;
+    font-size: $tamano-titulo;
+    width: 62%;
+    border-bottom: 1px solid $color-borde;
+    white-space: nowrap;
+}
+
+.content aside .sidebar ul {
+    list-style: none;
+    padding: $espaciado;
+    margin: $espaciado;
+    display: flex;
+    flex-direction: column;
+}
+
+.content aside .sidebar li {
+    padding: $espaciado;
+}
+
+.content aside .sidebar li button {
+    background-color: $color-botones;
+    padding: 15px 20px;
+    height: $alto-botones;
+    width: $ancho-botones;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.content .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: $espaciado;
+    padding: $espaciado;
+}
+
+.content .container .card {
+    background-color: $color-fondo;
+    border: 1px solid $color-borde;
+    margin-bottom: $margen-tarjetas;
+    padding: 0;
+    width: $tamano-tarjeta;
+}
+
+.content .container .card img {
+    width: 100%;
+    height: auto;
+}
+
+.content .container .card p {
+    opacity: $opacidad-texto;
+}
+
+footer h1 {
+    font-style: italic;
+    opacity: $opacidad-texto;
+    margin-left: $margen-logo;
+    margin-top: $espaciado;
+}

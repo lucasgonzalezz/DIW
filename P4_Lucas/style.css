@@ -1,0 +1,29 @@
+/* Estilo para la tabla */
+.tabla {
+    display: table;
+    width: 100%;
+}
+
+/* Estilo para la fila del encabezado de la tabla */
+.encabezado-tabla {
+    display: table-header-group;
+    font-weight: bold;
+}
+
+/* Estilo para las filas de datos de la tabla */
+.fila-tabla {
+    display: table-row;
+}
+
+/* Estilo para las celdas de la tabla */
+.celda {
+    display: table-cell;
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+/* Estilo para la fila del pie de la tabla */
+.fila-pie {
+    display: table-footer-group;
+    font-weight: bold;
+}

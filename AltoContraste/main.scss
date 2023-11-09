@@ -1,0 +1,8 @@
+@use 'modoClaro' as mc;
+@use 'modoOscuro' as mo;
+@use 'base';
+
+
+//@include mo.definEstilo;
+@include mc.definEstilo;
+
