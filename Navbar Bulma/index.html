@@ -13,27 +13,39 @@
 <nav class="navbar is-warning has-shadow" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <a class="navbar-item" href="#">
-            <img src="./cubo.png" alt="Logo"> <!-- Reemplaza "tu_logo.png" con la ruta de tu logo -->
+            <img src="./logo.png" alt="Logo">
             PORTAFOLIO
         </a>
 
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
         </a>
     </div>
 
-    <div id="navbarBasicExample" class="navbar-menu is-warning has-shadow">
+    <div id="navbar" class="navbar-menu is-warning has-shadow">
         <div class="navbar-end">
             <a class="navbar-item" href="#">
                 INICIO
             </a>
 
-            <a class="navbar-item" href="#">
-                PROYECTOS
-            </a>
-
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    PROYECTOS
+                </a>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item" href="#">
+                        Proyecto 1
+                    </a>
+                    <a class="navbar-item" href="#">
+                        Proyecto 2
+                    </a>
+                    <a class="navbar-item" href="#">
+                        Proyecto 3
+                    </a>
+                </div>
+            </div>
             <a class="navbar-item" href="#">
                 BLOG
             </a>
@@ -45,84 +57,83 @@
     </div>
 </nav>
 
-    <div class="content">
-        <aside>
-            <div class="sidebar">
-                <div class="title">
-                    <p>¿Qué quieres ver?</p>
-                </div>
-                <ul>
-                    <li><button>WEBS</button></li> <!-- Botones para filtrar proyectos por categoría -->
-                    <li><button>APPS</button></li>
-                    <li><button>DISEÑOS</button></li>
-                    <li><button>OTROS</button></li>
-                </ul>
+<div class="content">
+    <aside>
+        <div class="sidebar">
+            <div class="title">
+                <p>¿Qué quieres ver?</p>
             </div>
-        </aside>
+            <ul>
+                <li><button>WEBS</button></li> <!-- Botones para filtrar proyectos por categoría -->
+                <li><button>APPS</button></li>
+                <li><button>DISEÑOS</button></li>
+                <li><button>OTROS</button></li>
+            </ul>
+        </div>
+    </aside>
 
-        <div class="container">
-            <div class="card">
-                <img src="https://i.redd.it/6ihl9vurecz01.png" alt="Proyecto 1"> <!-- Imagen del proyecto 1 -->
-                <h4>Nombre del proyecto</h4> <!-- Título del proyecto 1 -->
-                <p>Sitio web</p> <!-- Descripción del proyecto 1 -->
-            </div>
-            <div class="card">
-                <img src="https://i.redd.it/6ihl9vurecz01.png" alt="Proyecto 2">
-                <h4>Nombre del proyecto</h4>
-                <p>Sitio web</p>
-            </div>
-            <div class="card">
-                <img src="https://i.redd.it/6ihl9vurecz01.png" alt="Proyecto 3">
-                <h4>Nombre del proyecto</h4>
-                <p>Sitio web</p>
-            </div>
-            <div class="card">
-                <img src="https://i.redd.it/6ihl9vurecz01.png" alt="Proyecto 4">
-                <h4>Nombre del proyecto</h4>
-                <p>Sitio web</p>
-            </div>
-            <div class="card">
-                <img src="https://i.redd.it/6ihl9vurecz01.png" alt="Proyecto 5">
-                <h4>Nombre del proyecto</h4>
-                <p>Sitio web</p>
-            </div>
-            <div class="card">
-                <img src="https://i.redd.it/6ihl9vurecz01.png" alt="Proyecto 6">
-                <h4>Nombre del proyecto</h4>
-                <p>Sitio web</p>
-            </div>
-            <div class="card">
-                <img src="https://i.redd.it/6ihl9vurecz01.png" alt="Proyecto 6">
-                <h4>Nombre del proyecto</h4>
-                <p>Sitio web</p>
-            </div>
-            <div class="card">
-                <img src="https://i.redd.it/6ihl9vurecz01.png" alt="Proyecto 7">
-                <h4>Nombre del proyecto</h4>
-                <p>Sitio web</p>
-            </div>
+    <div class="container">
+        <div class="card">
+            <img src="https://i.redd.it/6ihl9vurecz01.png" alt="Proyecto 1"> <!-- Imagen del proyecto 1 -->
+            <h4>Nombre del proyecto</h4> <!-- Título del proyecto 1 -->
+            <p>Sitio web</p> <!-- Descripción del proyecto 1 -->
+        </div>
+        <div class="card">
+            <img src="https://i.redd.it/6ihl9vurecz01.png" alt="Proyecto 2">
+            <h4>Nombre del proyecto</h4>
+            <p>Sitio web</p>
+        </div>
+        <div class="card">
+            <img src="https://i.redd.it/6ihl9vurecz01.png" alt="Proyecto 3">
+            <h4>Nombre del proyecto</h4>
+            <p>Sitio web</p>
+        </div>
+        <div class="card">
+            <img src="https://i.redd.it/6ihl9vurecz01.png" alt="Proyecto 4">
+            <h4>Nombre del proyecto</h4>
+            <p>Sitio web</p>
+        </div>
+        <div class="card">
+            <img src="https://i.redd.it/6ihl9vurecz01.png" alt="Proyecto 5">
+            <h4>Nombre del proyecto</h4>
+            <p>Sitio web</p>
+        </div>
+        <div class="card">
+            <img src="https://i.redd.it/6ihl9vurecz01.png" alt="Proyecto 6">
+            <h4>Nombre del proyecto</h4>
+            <p>Sitio web</p>
+        </div>
+        <div class="card">
+            <img src="https://i.redd.it/6ihl9vurecz01.png" alt="Proyecto 6">
+            <h4>Nombre del proyecto</h4>
+            <p>Sitio web</p>
+        </div>
+        <div class="card">
+            <img src="https://i.redd.it/6ihl9vurecz01.png" alt="Proyecto 7">
+            <h4>Nombre del proyecto</h4>
+            <p>Sitio web</p>
         </div>
     </div>
-    <footer>
-        <h1>PORTAFOLIO (Lucas González)</h1> <!-- Pie de página con el título del portafolio -->
-    </footer>
+</div>
+<footer>
+    <h1>PORTAFOLIO (Lucas González)</h1> <!-- Pie de página con el título del portafolio -->
+</footer>
 </body>
 
 <script>
     $(document).ready(function () {
         // Selecciona el botón de la hamburguesa y el menú
         var $navbarBurger = $('.navbar-burger');
-        var $navbarMenu = $('#navbarBasicExample');
+        var $navbarMenu = $('#navbar');
 
-        // Agrega un evento clic al botón de la hamburguesa
+        // Evento clic al botón de la hamburguesa
         $navbarBurger.click(function () {
-            // Alternar la clase 'is-active' al botón de la hamburguesa
+            // Alterna la clase 'is-active' al botón de la hamburguesa
             $navbarBurger.toggleClass('is-active');
-            // Alternar la visibilidad del menú
+            // Alterna la visibilidad del menú
             $navbarMenu.toggleClass('is-active');
         });
     });
 </script>
-
 
 </html>
