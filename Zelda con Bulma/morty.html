@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columnas bulma</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar is-primary has-shadow" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item title mt-4" href="#">
+                <img src="./logo.png" alt="Logo" style="max-height: 2em;">
+                RICK & MORTY
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbar" class="navbar-menu is-warning has-shadow">
+            <div class="navbar-end">
+                <a class="navbar-item is-size-5" href="#">
+                    INICIO
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link is-size-5">
+                        EPISODIOS
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="#">
+                            EP.1
+                        </a>
+                        <a class="navbar-item" href="#">
+                            EP.2
+                        </a>
+                        <a class="navbar-item" href="#">
+                            EP.3
+                        </a>
+                        <a class="navbar-item" href="#">
+                            EP.4
+                        </a>
+                        <a class="navbar-item" href="#">
+                            EP.5
+                        </a>
+                        <a class="navbar-item" href="#">
+                            EP.6
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link is-size-5">
+                        TEMPORADAS
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="#">
+                            Temporada 1
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Temporada 2
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Temporada 3
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Temporada 4
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Temporada 5
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Temporada 6
+                        </a>
+                    </div>
+                </div>
+                <a class="navbar-item is-size-5" href="#">
+                    CONTACTO
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="columns is-centered mt-4">
+            <div class="column is-2"></div>
+            <div class="column">
+                <h1 class="title is-size-1 has-text-centered">Rick</h1>
+                <img src="./morty.png" style="max-height: 20em;">
+                <p class="has-text-centered mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eros
+                    nibh,
+                    porttitor sit amet hendrerit sit amet, sollicitudin vel velit. Vestibulum maximus orci et erat
+                    fermentum tempus. Vestibulum eget ipsum quis nibh hendrerit fringilla eget sit amet lorem.
+                    Maecenas tellus diam, facilisis quis interdum vitae, luctus at neque. Nunc mollis magna at dui
+                    faucibus sagittis. </p>
+            </div>
+            <div class="column">
+                <h1 class="title is-size-1 has-text-centered">and</h1>
+                <img src="./morty.png" style="max-height: 20em;">
+                <p class="has-text-centered mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eros
+                    nibh,
+                    porttitor sit amet hendrerit sit amet, sollicitudin vel velit. Vestibulum maximus orci et erat
+                    fermentum tempus. Vestibulum eget ipsum quis nibh hendrerit fringilla eget sit amet lorem.
+                    Maecenas tellus diam, facilisis quis interdum vitae, luctus at neque. Nunc mollis magna at dui
+                    faucibus sagittis. </p>
+            </div>
+            <div class="column">
+                <h1 class="title is-size-1 has-text-centered">Morty</h1>
+                <img src="./morty.png" style="max-height: 20em;">
+                <p class="has-text-centered mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eros
+                    nibh,
+                    porttitor sit amet hendrerit sit amet, sollicitudin vel velit. Vestibulum maximus orci et erat
+                    fermentum tempus. Vestibulum eget ipsum quis nibh hendrerit fringilla eget sit amet lorem.
+                    Maecenas tellus diam, facilisis quis interdum vitae, luctus at neque. Nunc mollis magna at dui
+                    faucibus sagittis. </p>
+            </div>
+            <div class="column is-2"></div>
+        </div>
+    </section>
+
+    <footer class="footer has-background-primary" style="height: 80px;">
+        <div class="content has-text-centered is-centered">
+            <p class="is-size-4 has-text-white">Para más información de Rick and Morty, visita la siguiente web: <a
+                    href="https://es.wikipedia.org/wiki/Rick_y_Morty" target="_blank"
+                    class="has-text-white">Mortitas.com</a></p>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            // Selecciona el botón de la hamburguesa y el menú
+            var $navbarBurger = $('.navbar-burger');
+            var $navbarMenu = $('#navbar');
+
+            // Evento clic al botón de la hamburguesa
+            $navbarBurger.click(function () {
+                // Alterna la clase 'is-active' al botón de la hamburguesa
+                $navbarBurger.toggleClass('is-active');
+                // Alterna la visibilidad del menú
+                $navbarMenu.toggleClass('is-active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
