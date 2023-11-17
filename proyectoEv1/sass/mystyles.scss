@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+// Importa la fuente de Google
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
+
+// Define tus colores
+$purple: #da791ff1;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+
+// Actualiza las variables globales de Bulma
+$family-sans-serif: 'McLaren', sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $purple;
+$link: $pink;
+
+// Actualiza algunas variables de componentes de Bulma
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+
+// Importa solo lo que necesitas de Bulma
+@import "./utilities/_all.sass";
+@import "./base/_all.sass";
+@import "./elements/button.sass";
+@import "./elements/container.sass";
+@import "./elements/title.sass";
+@import "./form/_all.sass";
+@import "./components/navbar.sass";
+@import "./layout/hero.sass";
+@import "./layout/section.sass";
