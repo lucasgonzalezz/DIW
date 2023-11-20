@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
 
 // Define tus colores
-$purple: #da791ff1;
+$orange: #da791ff1;
 $pink: #FA7C91;
 $brown: #757763;
 $beige-light: #D0D1CD;
@@ -15,7 +15,7 @@ $beige-lighter: #EFF0EB;
 $family-sans-serif: 'McLaren', sans-serif;
 $grey-dark: $brown;
 $grey-light: $beige-light;
-$primary: $purple;
+$primary: $pink;
 $link: $pink;
 
 // Actualiza algunas variables de componentes de Bulma
@@ -23,7 +23,6 @@ $body-background-color: $beige-lighter;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
-
 
 // Importa solo lo que necesitas de Bulma
 @import "./utilities/_all.sass";
