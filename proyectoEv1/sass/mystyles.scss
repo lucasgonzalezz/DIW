@@ -13,18 +13,21 @@ $beige-lighter: #EFF0EB;
 
 // Actualiza las variables globales de Bulma
 $family-sans-serif: 'McLaren', sans-serif;
-$grey-dark: $brown;
-$grey-light: $beige-light;
-$primary: $pink;
-$link: $pink;
+$grey-dark: $orange;
+$grey-light: $orange;
+$primary: $orange;
+$link: $beige-lighter;
+$i: $orange;
 
 // Actualiza algunas variables de componentes de Bulma
 $body-background-color: $beige-lighter;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
+$has-background-primary: $orange;
 
 // Importa solo lo que necesitas de Bulma
+
 @import "./utilities/_all.sass";
 @import "./base/_all.sass";
 @import "./elements/button.sass";

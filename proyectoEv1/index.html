@@ -13,17 +13,15 @@
 
 <body>
 
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <!--Menu de tipo navbar-->
+    <nav class="navbar is-primary has-shadow-rounded" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
+            <!--Logotipo-->
             <a class="navbar-item" href="#">
-                <p class="level-item">
-                    <a href="#" class="icon is-large is-primary">
-                        <i class="fas fa-gamepad fa-2x"></i>
-                    </a>
-                </p>
+                <img src="./img/logo.png" style="max-height:40px;" alt="logotipo">
             </a>
 
-            <!-- Add a burger menu icon for mobile navigation -->
+            <!--Menu burger para la navegacion movil-->
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
                 data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
@@ -34,14 +32,14 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-                <!-- Add your navigation links here -->
+                <!--Links de navegacion-->
                 <a class="navbar-item" href="#">Home</a>
-                <a class="navbar-item" href="#">About</a>
-                <a class="navbar-item" href="#">Services</a>
-                <a class="navbar-item" href="#">Contact</a>
+                <a class="navbar-item" href="#">Acerca</a>
+                <a class="navbar-item" href="#">Servicios</a>
+                <a class="navbar-item" href="#">Contacto</a>
             </div>
 
-            <!-- You can add more items on the right if needed -->
+            <!--Items de sign up y logo in-->
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
@@ -49,38 +47,196 @@
                             <strong>Sign up</strong>
                         </a>
                         <a class="button is-light" href="#">
-                            Log in
+                            <strong>Log in</strong>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
+    <!--Fin del navbar-->
 
-    <section class="section">
+    <!--Contenedores con enlaces a informacion relevante, estruicturados en columnas-->
+    <section class="section my-2">
         <div class="container">
-            <div class="columns is-multiline">
-                <div class="column is-12-desktop">
-                    <div class="columns is-multiline">
-                        <div class="column is-3-desktop is-6-tablet is-12-mobile">
+            <div class="columns">
+                <div class="column has-background-primary has-text-centered p-5 m-3 box has-shadow-rounded">
+                    <a href=""><span>Ultimas ofertas</span></a>
+                </div>
+                <div class="column has-background-primary has-text-centered p-5 m-3 box has-shadow-rounded">
+                    <a href=""><span>TOP ventas</span></a>
+                </div>
+                <div class="column has-background-primary has-text-centered p-5 m-3 box has-shadow-rounded">
+                    <a href="">Noticias<span></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Fin de los contenedores-->
+
+    <!--Inicio de la seccion principal (esta hecha de forma que se adapte a los 3 tipos de vistas)-->
+    <section class="section my-2 is-4-desktop is-8-tablet is-12-mobile">
+        <div class="container">
+            <!--Inicio buscador-->
+            <div class="columns is-9">
+                <div class="column mx-3">
+                    <div class="field has-addons">
+                        <p class="control is-expanded">
+                            <input class="input" type="text" placeholder="Busca aquí tus artículos">
+                        </p>
+                        <p class="control">
+                            <button class="button is-primary">
+                                <p>Buscar</p>
+                                <i class="fas fa-search ml-2"></i>
+                            </button>
+                        </p>
+                    </div>
+                    <!--Inicio cards-->
+                    <div class="columns is-multiline is-vcentered my-2 is-half-tablet is-12-mobile">
+                        <div class="column has-text-centered is-6-tablet is-4-desktop">
                             <div class="card p-2">
+                                <!--Imagen de la card (esta es la unica que tiene enlace)-->
                                 <div class="card-image">
                                     <a href="game.html">
                                         <figure class="image is-4by6">
-                                            <img src="https://im.ziffdavisinternational.com/ign_es/screenshot/default/60225-metal-gear-solid-3-subsistence-playstation-2_umwf.jpg" alt="">
+                                            <img src="./img/fc24.avif" alt="FC24">
                                         </figure>
                                     </a>
                                 </div>
+                                <!--Cotenido principal de la card-->
                                 <div class="card-content">
                                     <div class="media">
                                         <div class="media-content">
+                                            <!--Titulo de la card-->
                                             <p class="title is-4">
-                                                Holsssssss <a href="game.html">
+                                                FC 24 <a href="game.html">
+                                                    <!--Icono con enlace a la info del videojuego-->
                                                     <span class="icon has-text-info">
                                                         <i class="fas fa-info-circle"></i>
                                                     </span>
                                                 </a>
                                             </p>
+                                            <!--Precio del videojuego-->
+                                            <div class="content has-text-grey">
+                                                <div class="level">
+                                                    <div class="level-left">
+                                                        <p class="level-item">Venta</p>
+                                                    </div>
+                                                    <div class="level-right">
+                                                        <p class="level-item">50.00€</p>
+                                                    </div>
+                                                </div>
+                                                <div class="level">
+                                                    <div class="level-left">
+                                                        <p class="level-item">Compra</p>
+                                                    </div>
+                                                    <div class="level-right">
+                                                        <p class="level-item">35.00€</p>
+                                                    </div>
+                                                </div>
+                                                <div class="level">
+                                                    <div class="level-left">
+                                                        <p class="level-item">Intercambio</p>
+                                                    </div>
+                                                    <div class="level-right">
+                                                        <p class="level-item">25.00€</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Botones de la card-->
+                                    <div class="content">
+                                        <button class="button has-background-grey-dark mx-2">Vender</button>
+                                        <button class="button has-background-grey-light mx-2">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Fin de la card-->
+
+                        <!--Comienzo de la siguiente card-->
+                        <div class="column has-text-centered is-6-tablet is-4-desktop">
+                            <div class="card p-2">
+                                <!--Imagen de la card-->
+                                <div class="card-image">
+                                    <figure class="image is-4by6">
+                                        <img src="./img/crew.avif" alt="Crew">
+                                    </figure>
+                                </div>
+                                <!--Cotenido principal de la card-->
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-content">
+                                            <!--Titulo de la card-->
+                                            <p class="title is-4">
+                                                The Crew
+                                                <!--Icono-->
+                                                <span class="icon has-text-info">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </span>
+                                            </p>
+                                            <!--Precio del videojuego-->
+                                            <div class="content has-text-grey">
+                                                <div class="level">
+                                                    <div class="level-left">
+                                                        <p class="level-item">Venta</p>
+                                                    </div>
+                                                    <div class="level-right">
+                                                        <p class="level-item">40.00€</p>
+                                                    </div>
+                                                </div>
+                                                <div class="level">
+                                                    <div class="level-left">
+                                                        <p class="level-item">Compra</p>
+                                                    </div>
+                                                    <div class="level-right">
+                                                        <p class="level-item">25.00€</p>
+                                                    </div>
+                                                </div>
+                                                <div class="level">
+                                                    <div class="level-left">
+                                                        <p class="level-item">Intercambio</p>
+                                                    </div>
+                                                    <div class="level-right">
+                                                        <p class="level-item">20.00€</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Botones de la card-->
+                                    <div class="content">
+                                        <button class="button has-background-grey-dark mx-2">Vender</button>
+                                        <button class="button has-background-grey-light mx-2">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Fin de la card-->
+
+                        <!--Comienzo de la siguiente card-->
+                        <div class="column has-text-centered is-6-tablet is-4-desktop">
+                            <div class="card p-2">
+                                <!--Imagen de la card-->
+                                <div class="card-image">
+                                    <figure class="image is-4by6">
+                                        <img src="./img/horizon.jpeg" alt="Horizon">
+                                    </figure>
+                                </div>
+                                <!--Cotenido principal de la card-->
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-content">
+                                            <!--Titulo de la card-->
+                                            <p class="title is-4">
+                                                Horizon
+                                                <!--Icono-->
+                                                <span class="icon has-text-info">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </span>
+                                            </p>
+                                            <!--Precio del videojuego-->
                                             <div class="content has-text-grey">
                                                 <div class="level">
                                                     <div class="level-left">
@@ -95,7 +251,7 @@
                                                         <p class="level-item">Compra</p>
                                                     </div>
                                                     <div class="level-right">
-                                                        <p class="level-item">30.00€</p>
+                                                        <p class="level-item">11.00€</p>
                                                     </div>
                                                 </div>
                                                 <div class="level">
@@ -103,46 +259,51 @@
                                                         <p class="level-item">Intercambio</p>
                                                     </div>
                                                     <div class="level-right">
-                                                        <p class="level-item">30.00€</p>
+                                                        <p class="level-item">7.00€</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!--Botones de la card-->
                                     <div class="content">
-                                        <button class="button has-background-grey-dark">Vender</button>
-                                        <button class="button has-background-grey-light">Comprar</button>
+                                        <button class="button has-background-grey-dark mx-2">Vender</button>
+                                        <button class="button has-background-grey-light mx-2">Comprar</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!--Fin de la card-->
 
-                        <div class="column is-3-desktop is-6-tablet is-12-mobile">
+                        <!--Comienzo de la siguiente card-->
+                        <div class="column has-text-centered is-6-tablet is-4-desktop">
                             <div class="card p-2">
+                                <!--Imagen de la card-->
                                 <div class="card-image">
-                                    <a href="game.html">
-                                        <figure class="image is-4by6">
-                                            <img src="https://im.ziffdavisinternational.com/ign_es/screenshot/default/60225-metal-gear-solid-3-subsistence-playstation-2_umwf.jpg" alt="">
-                                        </figure>
-                                    </a>
+                                    <figure class="image is-4by6">
+                                        <img src="./img/acm.avif" alt="ACM">
+                                    </figure>
                                 </div>
+                                <!--Cotenido principal de la card-->
                                 <div class="card-content">
                                     <div class="media">
                                         <div class="media-content">
+                                            <!--Titulo de la card-->
                                             <p class="title is-4">
-                                                Holsssssss <a href="game.html">
-                                                    <span class="icon has-text-info">
-                                                        <i class="fas fa-info-circle"></i>
-                                                    </span>
-                                                </a>
+                                                ACM
+                                                <!--Icono-->
+                                                <span class="icon has-text-info">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </span>
                                             </p>
+                                            <!--Precio del videojuego-->
                                             <div class="content has-text-grey">
                                                 <div class="level">
                                                     <div class="level-left">
                                                         <p class="level-item">Venta</p>
                                                     </div>
                                                     <div class="level-right">
-                                                        <p class="level-item">30.00€</p>
+                                                        <p class="level-item">60.00€</p>
                                                     </div>
                                                 </div>
                                                 <div class="level">
@@ -150,7 +311,7 @@
                                                         <p class="level-item">Compra</p>
                                                     </div>
                                                     <div class="level-right">
-                                                        <p class="level-item">30.00€</p>
+                                                        <p class="level-item">40.00€</p>
                                                     </div>
                                                 </div>
                                                 <div class="level">
@@ -158,47 +319,51 @@
                                                         <p class="level-item">Intercambio</p>
                                                     </div>
                                                     <div class="level-right">
-                                                        <p class="level-item">30.00€</p>
+                                                        <p class="level-item">33.00€</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!--Botones de la card-->
                                     <div class="content">
-                                        <button class="button has-background-grey-dark">Vender</button>
-                                        <button class="button has-background-grey-light">Comprar</button>
+                                        <button class="button has-background-grey-dark mx-2">Vender</button>
+                                        <button class="button has-background-grey-light mx-2">Comprar</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+                        <!--Fin de la card-->
 
-                        <div class="column is-3-desktop is-6-tablet is-12-mobile">
+                        <!--Comienzo de la siguiente card-->
+                        <div class="column has-text-centered is-6-tablet is-4-desktop">
                             <div class="card p-2">
+                                <!--Imagen de la card-->
                                 <div class="card-image">
-                                    <a href="game.html">
-                                        <figure class="image is-4by6">
-                                            <img src="https://im.ziffdavisinternational.com/ign_es/screenshot/default/60225-metal-gear-solid-3-subsistence-playstation-2_umwf.jpg" alt="">
-                                        </figure>
-                                    </a>
+                                    <figure class="image is-4by6">
+                                        <img src="./img/cod.avif" alt="COD">
+                                    </figure>
                                 </div>
+                                <!--Cotenido principal de la card-->
                                 <div class="card-content">
                                     <div class="media">
                                         <div class="media-content">
+                                            <!--Titulo de la card-->
                                             <p class="title is-4">
-                                                Holsssssss <a href="game.html">
-                                                    <span class="icon has-text-info">
-                                                        <i class="fas fa-info-circle"></i>
-                                                    </span>
-                                                </a>
+                                                COD
+                                                <!--Icono-->
+                                                <span class="icon has-text-info">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </span>
                                             </p>
+                                            <!--Precio del videojuego-->
                                             <div class="content has-text-grey">
                                                 <div class="level">
                                                     <div class="level-left">
                                                         <p class="level-item">Venta</p>
                                                     </div>
                                                     <div class="level-right">
-                                                        <p class="level-item">30.00€</p>
+                                                        <p class="level-item">43.00€</p>
                                                     </div>
                                                 </div>
                                                 <div class="level">
@@ -206,7 +371,7 @@
                                                         <p class="level-item">Compra</p>
                                                     </div>
                                                     <div class="level-right">
-                                                        <p class="level-item">30.00€</p>
+                                                        <p class="level-item">31.00€</p>
                                                     </div>
                                                 </div>
                                                 <div class="level">
@@ -214,49 +379,51 @@
                                                         <p class="level-item">Intercambio</p>
                                                     </div>
                                                     <div class="level-right">
-                                                        <p class="level-item">30.00€</p>
+                                                        <p class="level-item">27.00€</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!--Botones de la card-->
                                     <div class="content">
-                                        <button class="button has-background-grey-dark">Vender</button>
-                                        <button class="button has-background-grey-light">Comprar</button>
+                                        <button class="button has-background-grey-dark mx-2">Vender</button>
+                                        <button class="button has-background-grey-light mx-2">Comprar</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+                        <!--Fin de la card-->
 
-
-                        
-                        <div class="column is-3-desktop is-6-tablet is-12-mobile">
+                        <!--Comienzo de la siguiente card-->
+                        <div class="column has-text-centered is-6-tablet is-4-desktop">
                             <div class="card p-2">
+                                <!--Imagen de la card-->
                                 <div class="card-image">
-                                    <a href="game.html">
-                                        <figure class="image is-4by6">
-                                            <img src="https://im.ziffdavisinternational.com/ign_es/screenshot/default/60225-metal-gear-solid-3-subsistence-playstation-2_umwf.jpg" alt="">
-                                        </figure>
-                                    </a>
+                                    <figure class="image is-4by6">
+                                        <img src="./img/jedi.avif" alt="jedi">
+                                    </figure>
                                 </div>
+                                <!--Cotenido principal de la card-->
                                 <div class="card-content">
                                     <div class="media">
                                         <div class="media-content">
+                                            <!--Titulo de la card-->
                                             <p class="title is-4">
-                                                Holsssssss <a href="game.html">
-                                                    <span class="icon has-text-info">
-                                                        <i class="fas fa-info-circle"></i>
-                                                    </span>
-                                                </a>
+                                                Jedi survivor
+                                                <!--Icono-->
+                                                <span class="icon has-text-info">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </span>
                                             </p>
+                                            <!--Precio del videojuego-->
                                             <div class="content has-text-grey">
                                                 <div class="level">
                                                     <div class="level-left">
                                                         <p class="level-item">Venta</p>
                                                     </div>
                                                     <div class="level-right">
-                                                        <p class="level-item">30.00€</p>
+                                                        <p class="level-item">24.00€</p>
                                                     </div>
                                                 </div>
                                                 <div class="level">
@@ -264,7 +431,7 @@
                                                         <p class="level-item">Compra</p>
                                                     </div>
                                                     <div class="level-right">
-                                                        <p class="level-item">30.00€</p>
+                                                        <p class="level-item">11.00€</p>
                                                     </div>
                                                 </div>
                                                 <div class="level">
@@ -272,46 +439,51 @@
                                                         <p class="level-item">Intercambio</p>
                                                     </div>
                                                     <div class="level-right">
-                                                        <p class="level-item">30.00€</p>
+                                                        <p class="level-item">5.00€</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!--Botones de la card-->
                                     <div class="content">
-                                        <button class="button has-background-grey-dark">Vender</button>
-                                        <button class="button has-background-grey-light">Comprar</button>
+                                        <button class="button has-background-grey-dark mx-2">Vender</button>
+                                        <button class="button has-background-grey-light mx-2">Comprar</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="column is-3-desktop is-6-tablet is-12-mobile">
+                        <!--Fin de la card-->
+
+                        <!--Comienzo de la siguiente card-->
+                        <div class="column has-text-centered is-6-tablet is-4-desktop">
                             <div class="card p-2">
+                                <!--Imagen de la card-->
                                 <div class="card-image">
-                                    <a href="game.html">
-                                        <figure class="image is-4by6">
-                                            <img src="https://im.ziffdavisinternational.com/ign_es/screenshot/default/60225-metal-gear-solid-3-subsistence-playstation-2_umwf.jpg" alt="">
-                                        </figure>
-                                    </a>
+                                    <figure class="image is-4by6">
+                                        <img src="./img/gk.jpeg" alt="GK">
+                                    </figure>
                                 </div>
+                                <!--Cotenido principal de la card-->
                                 <div class="card-content">
                                     <div class="media">
                                         <div class="media-content">
+                                            <!--Titulo de la card-->
                                             <p class="title is-4">
-                                                Holsssssss <a href="game.html">
-                                                    <span class="icon has-text-info">
-                                                        <i class="fas fa-info-circle"></i>
-                                                    </span>
-                                                </a>
+                                                Gotham Knights
+                                                <!--Icono-->
+                                                <span class="icon has-text-info">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </span>
                                             </p>
+                                            <!--Precio del videojuego-->
                                             <div class="content has-text-grey">
                                                 <div class="level">
                                                     <div class="level-left">
                                                         <p class="level-item">Venta</p>
                                                     </div>
                                                     <div class="level-right">
-                                                        <p class="level-item">30.00€</p>
+                                                        <p class="level-item">70.00€</p>
                                                     </div>
                                                 </div>
                                                 <div class="level">
@@ -319,7 +491,7 @@
                                                         <p class="level-item">Compra</p>
                                                     </div>
                                                     <div class="level-right">
-                                                        <p class="level-item">30.00€</p>
+                                                        <p class="level-item">49.00€</p>
                                                     </div>
                                                 </div>
                                                 <div class="level">
@@ -327,47 +499,51 @@
                                                         <p class="level-item">Intercambio</p>
                                                     </div>
                                                     <div class="level-right">
-                                                        <p class="level-item">30.00€</p>
+                                                        <p class="level-item">37.00€</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!--Botones de la card-->
                                     <div class="content">
-                                        <button class="button has-background-grey-dark">Vender</button>
-                                        <button class="button has-background-grey-light">Comprar</button>
+                                        <button class="button has-background-grey-dark mx-2">Vender</button>
+                                        <button class="button has-background-grey-light mx-2">Comprar</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!--Fin de la card-->
 
-  
-                        <div class="column is-3-desktop is-6-tablet is-12-mobile">
+                        <!--Comienzo de la siguiente card-->
+                        <div class="column has-text-centered is-6-tablet is-4-desktop">
                             <div class="card p-2">
+                                <!--Imagen de la card-->
                                 <div class="card-image">
-                                    <a href="game.html">
-                                        <figure class="image is-4by6">
-                                            <img src="https://im.ziffdavisinternational.com/ign_es/screenshot/default/60225-metal-gear-solid-3-subsistence-playstation-2_umwf.jpg" alt="">
-                                        </figure>
-                                    </a>
+                                    <figure class="image is-4by6">
+                                        <img src="./img/nba2k24.avif" alt="NBA">
+                                    </figure>
                                 </div>
+                                <!--Cotenido principal de la card-->
                                 <div class="card-content">
                                     <div class="media">
                                         <div class="media-content">
+                                            <!--Titulo de la card-->
                                             <p class="title is-4">
-                                                Holsssssss <a href="game.html">
-                                                    <span class="icon has-text-info">
-                                                        <i class="fas fa-info-circle"></i>
-                                                    </span>
-                                                </a>
+                                                NBA 2K24
+                                                <!--Icono-->
+                                                <span class="icon has-text-info">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </span>
                                             </p>
+                                            <!--Precio del videojuego-->
                                             <div class="content has-text-grey">
                                                 <div class="level">
                                                     <div class="level-left">
                                                         <p class="level-item">Venta</p>
                                                     </div>
                                                     <div class="level-right">
-                                                        <p class="level-item">30.00€</p>
+                                                        <p class="level-item">50.00€</p>
                                                     </div>
                                                 </div>
                                                 <div class="level">
@@ -375,7 +551,7 @@
                                                         <p class="level-item">Compra</p>
                                                     </div>
                                                     <div class="level-right">
-                                                        <p class="level-item">30.00€</p>
+                                                        <p class="level-item">35.00€</p>
                                                     </div>
                                                 </div>
                                                 <div class="level">
@@ -383,32 +559,142 @@
                                                         <p class="level-item">Intercambio</p>
                                                     </div>
                                                     <div class="level-right">
-                                                        <p class="level-item">30.00€</p>
+                                                        <p class="level-item">25.00€</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!--Botones de la card-->
                                     <div class="content">
-                                        <button class="button has-background-grey-dark">Vender</button>
-                                        <button class="button has-background-grey-light">Comprar</button>
+                                        <button class="button has-background-grey-dark mx-2">Vender</button>
+                                        <button class="button has-background-grey-light mx-2">Comprar</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!--Fin de la card-->
 
-
-
+                        <!--Comienzo de la siguiente card-->
+                        <div class="column has-text-centered is-6-tablet is-4-desktop">
+                            <div class="card p-2">
+                                <!--Imagen de la card-->
+                                <div class="card-image">
+                                    <figure class="image is-4by6">
+                                        <img src="./img/spiderman2.avif" alt="Spiderman2">
+                                    </figure>
+                                </div>
+                                <!--Cotenido principal de la card-->
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-content">
+                                            <!--Titulo de la card-->
+                                            <p class="title is-4">
+                                                Spiderman 2
+                                                <!--Icono-->
+                                                <span class="icon has-text-info">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </span>
+                                            </p>
+                                            <!--Precio del videojuego-->
+                                            <div class="content has-text-grey">
+                                                <div class="level">
+                                                    <div class="level-left">
+                                                        <p class="level-item">Venta</p>
+                                                    </div>
+                                                    <div class="level-right">
+                                                        <p class="level-item">100.00€</p>
+                                                    </div>
+                                                </div>
+                                                <div class="level">
+                                                    <div class="level-left">
+                                                        <p class="level-item">Compra</p>
+                                                    </div>
+                                                    <div class="level-right">
+                                                        <p class="level-item">50.00€</p>
+                                                    </div>
+                                                </div>
+                                                <div class="level">
+                                                    <div class="level-left">
+                                                        <p class="level-item">Intercambio</p>
+                                                    </div>
+                                                    <div class="level-right">
+                                                        <p class="level-item">25.00€</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Botones de la card-->
+                                    <div class="content">
+                                        <button class="button has-background-grey-dark mx-2">Vender</button>
+                                        <button class="button has-background-grey-light mx-2">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Fin de la card-->
                     </div>
                 </div>
-    </section>
+                <!--Fin de las cards-->
 
-    <footer class="has-text-centered footer">
+                <!--Inicio cajas con información adiciona a modo de enlaces rapidos a otras seciones de la web-->
+                <div class="column is-3 is-hidden-touch">
+                    <div class="box">
+                        <h1 class="subtitle has-background-info box has-text-info-light">
+                            Cesta de compra
+                        </h1>
+                        <p class="has-background-primary box is-justified has-text-grey">
+                            La cesta de compra está vacía
+                        </p>
+                    </div>
+                    <div class="box">
+                        <h1 class="subtitle has-background-info box has-text-info-light">
+                            Cesta de venta
+                        </h1>
+                        <p class="has-background-primary box is-justified has-text-grey">
+                            No has añadido ningún atículo a la venta
+                        </p>
+                    </div>
+                    <div class="box">
+                        <h1 class="subtitle has-background-info box has-text-info-light">
+                            Noticias destacadas
+                        </h1>
+                        <p class="has-background-primary box is-justified has-text-grey">
+                            Participa en el sorteo de un juego gratis resgistrandote en nuestra web
+                        </p>
+                        <p class="has-background-primary box is-justified has-text-grey">
+                            Ofertas que no te puedes perder por navidad
+                        </p>
+                        </p>
+                        <p class="has-background-primary box is-justified has-text-grey">
+                            Descubre las tendencias de los videojuegos para el próximo año
+                        </p>
+                        <p class="has-background-primary box is-justified has-text-grey">
+                            Consejos para mejorar tu experiencia de juego en línea
+                        </p>
+                        <p class="has-background-primary box is-justified has-text-grey">
+                            Reseña de los juegos más esperados de la temporada
+                        </p>
+                    </div>
+                </div>
+                <!--Fin de las cajas-->
+            </div>
+        </div>
+    </section>
+    <!--Fin de la seccion principal-->
+
+    <!--Inicio del footer-->
+    <footer class="has-text-centered footer has-background-primary">
         <section class="section my2">
+            <!--Contenedor con los enlaces a los terminos, condiciones y demas-->
             <div class="container">
                 <div class="columns">
                     <div class="column has-text-centered p-5 m-3">
-                        <a href="">Términos y condiciones</a>
+                        <a href="">Términos</a>
+                    </div>
+                    <div class="column has-text-centered p-5 m-3">
+                        <a href="">Condiciones</a>
                     </div>
                     <div class="column has-text-centered p-5 m-3">
                         <a href="">Privacidad</a>
@@ -419,21 +705,31 @@
                     <div class="column has-text-centered p-5 m-3">
                         <a href="">Restricciones de edad</a>
                     </div>
-                    <div class="column has-text-centered p-5 m-3">
-                        <a href="">Términos</a>
-                    </div>
                 </div>
             </div>
 
+            <!--Contenedor con los metodos de pago y las redes sociales-->
             <div class="container">
+                <!--Level para separar los metodos de pago a la izquierda-->
                 <div class="level">
                     <div class="level-left">
-                        <p class="level-item"><a href=""><img src="https://cdn.icon-icons.com/icons2/674/PNG/512/Visa_icon-icons.com_60549.png" class="icon is-large"></a></p>
-                        <p class="level-item"><a href=""><img src="https://cdn.icon-icons.com/icons2/1320/PNG/512/-mastercard_86833.png" class="icon is-large"></a></p>
-                        <p class="level-item"><a href=""><img src="https://cdn-icons-png.flaticon.com/512/6124/6124998.png" class="icon is-large"></a></p>
-                        <p class="level-item"><a href=""><img src="https://cdn-icons-png.flaticon.com/512/5968/5968279.png" class="icon is-large"></a></p>
-                        <p class="level-item"><a href=""><img src="https://cdn.icon-icons.com/icons2/674/PNG/512/Paypal-39_icon-icons.com_60555.png" class="icon is-large"></a></p>
+                        <p class="level-item"><a href=""><img
+                                    src="https://cdn.icon-icons.com/icons2/674/PNG/512/Visa_icon-icons.com_60549.png"
+                                    class="icon is-large"></a></p>
+                        <p class="level-item"><a href=""><img
+                                    src="https://cdn.icon-icons.com/icons2/1320/PNG/512/-mastercard_86833.png"
+                                    class="icon is-large"></a></p>
+                        <p class="level-item"><a href=""><img
+                                    src="https://cdn-icons-png.flaticon.com/512/6124/6124998.png"
+                                    class="icon is-large"></a></p>
+                        <p class="level-item"><a href=""><img
+                                    src="https://cdn-icons-png.flaticon.com/512/5968/5968279.png"
+                                    class="icon is-large"></a></p>
+                        <p class="level-item"><a href=""><img
+                                    src="https://cdn.icon-icons.com/icons2/674/PNG/512/Paypal-39_icon-icons.com_60555.png"
+                                    class="icon is-large"></a></p>
                     </div>
+                    <!--Y las redes sociales a la derecha-->
                     <div class="level-right">
                         <p class="level-item"><a href="#" class="icon is-large is-primary">
                                 <i class="fab fa-facebook fa-2x"></i>
@@ -451,11 +747,13 @@
                 </div>
             </div>
         </section>
+        <!--Seccion con el copyright-->
         <section>
-            <strong>Proyecto Ev1</strong> &copy; 2023. Todos los derechos reservados.
+            <strong>Proyecto Ev1 &copy; 2023. Todos los derechos reservados -> By Lucas González</strong>
         </section>
     </footer>
 
+    <!--Script para que funcione el menu burguer-->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
