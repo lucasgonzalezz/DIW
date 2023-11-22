@@ -1,31 +1,30 @@
 // mystyles.scss
+
 @charset "utf-8";
 
-// Importa la fuente de Google
+// Importa la fuente McLaren desde Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
 
-// Variables de colores
-$orange: #da791ff1;
-$dark-orange: #8a4a0df1;
-$light-orange: #cd813ae2;
-$white: #FFFFFF;
-$beige-lighter: #EFF0EB;
+// Variables para colores
+$orange: #da791ff1;                       // Color naranja principal
+$dark-orange: #8a4a0df1;                  // Tono más oscuro de naranja
+$light-orange: #cd813ae2;                 // Tono más claro de naranja
+$white: #FFFFFF;                          // Color blanco
+$beige-lighter: #EFF0EB;                  // Tono más claro de beige
 
-// Variables globales de Bulma
-$family-sans-serif: 'McLaren', sans-serif;
-$grey-dark: $dark-orange;
-$grey-light: $light-orange;
-$primary: $orange;
-$link: $beige-lighter;
-$has-text-white: $white;
+// Variables globales para Bulma
+$family-sans-serif: 'McLaren', sans-serif;  // Familia de fuentes para todo el documento
+$grey-dark: $dark-orange;                   // Color gris oscuro
+$grey-light: $light-orange;                 // Color gris claro
+$primary: $orange;                          // Variable de color primario
 
 // Variables de componentes de Bulma
-$body-background-color: $beige-lighter;
-$control-border-width: 2px;
-$input-border-color: transparent;
-$has-background-primary: $primary;
+$body-background-color: $beige-lighter;     // Color de fondo del cuerpo
+$control-border-width: 2px;                 // Ancho del borde del control
+$input-border-color: transparent;           // Color del borde del input
+$has-background-primary: $primary;          // Fondo para el estado primario
 
-// Imports Bulma
+// Importaciones de Bulma
 @import "./utilities/_all.sass";
 @import "./base/_all.sass";
 @import "./layout/_all.sass";
@@ -35,11 +34,11 @@ $has-background-primary: $primary;
 @import "./components/_all.sass";
 @import "./grid/_all.sass";
 
-// Regla adicionale para cambiar el color del texto en el is-active
+// Reglas adicionales para cambiar el color del texto en el estado 'is-active'
 .tabs-menu {
     li.is-active {
         a {
-            color: black !important;
+            color: black !important;  // Cambia el color del texto a negro en 'is-active'
         }
     }
 }

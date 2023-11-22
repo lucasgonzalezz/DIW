@@ -23,19 +23,28 @@
             </a>
 
             <!--Menu burger para la navegacion movil-->
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-                data-target="navbarBasicExample">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
             </a>
         </div>
 
-        <div id="navbarBasicExample" class="navbar-menu">
+        <div id="navbar" class="navbar-menu">
             <div class="navbar-start">
-                <!--Links de navegacion-->
+                <!-- Links de navegación -->
                 <a class="navbar-item" href="./index.html">Home</a>
-                <a class="navbar-item" href="#">Acerca</a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Acerca
+                    </a>
+                    <!-- Desplegable bajo el enlace "Acerca" -->
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="#">Facturación</a>
+                        <a class="navbar-item" href="#">Envío</a>
+                        <a class="navbar-item" href="#">Devoluciones</a>
+                    </div>
+                </div>
                 <a class="navbar-item" href="#">Servicios</a>
                 <a class="navbar-item" href="#">Contacto</a>
             </div>
@@ -714,21 +723,11 @@
                 <!--Level para separar los metodos de pago a la izquierda-->
                 <div class="level">
                     <div class="level-left">
-                        <p class="level-item"><a href=""><img
-                                    src="./img/visa.png"
-                                    class="icon is-large"></a></p>
-                        <p class="level-item"><a href=""><img
-                                    src="./img/master.png"
-                                    class="icon is-large"></a></p>
-                        <p class="level-item"><a href=""><img
-                                    src="./img/gpay.png"
-                                    class="icon is-large"></a></p>
-                        <p class="level-item"><a href=""><img
-                                    src="./img/apay.png"
-                                    class="icon is-large"></a></p>
-                        <p class="level-item"><a href=""><img
-                                    src="./img/paypal.png"
-                                    class="icon is-large"></a></p>
+                        <p class="level-item"><a href=""><img src="./img/visa.png" class="icon is-large"></a></p>
+                        <p class="level-item"><a href=""><img src="./img/master.png" class="icon is-large"></a></p>
+                        <p class="level-item"><a href=""><img src="./img/gpay.png" class="icon is-large"></a></p>
+                        <p class="level-item"><a href=""><img src="./img/apay.png" class="icon is-large"></a></p>
+                        <p class="level-item"><a href=""><img src="./img/paypal.png" class="icon is-large"></a></p>
                     </div>
                     <!--Y las redes sociales a la derecha-->
                     <div class="level-right">
@@ -756,18 +755,14 @@
 
     <!--Script para que funcione el menu burguer-->
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
+        document.addEventListener('DOMContentLoaded', function () {
+            var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
             if ($navbarBurgers.length > 0) {
-
-                $navbarBurgers.forEach(el => {
-                    el.addEventListener('click', () => {
-
-                        const target = el.dataset.target;
-                        const $target = document.getElementById(target);
-
-                        el.classList.toggle('is-active');
+                $navbarBurgers.forEach(function ($el) {
+                    $el.addEventListener('click', function () {
+                        var target = $el.dataset.target;
+                        var $target = document.getElementById(target);
+                        $el.classList.toggle('is-active');
                         $target.classList.toggle('is-active');
                     });
                 });

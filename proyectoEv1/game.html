@@ -36,9 +36,19 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-                <!--Links de navegacion-->
+                <!-- Links de navegación -->
                 <a class="navbar-item" href="./index.html">Home</a>
-                <a class="navbar-item" href="#">Acerca</a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Acerca
+                    </a>
+                    <!-- Desplegable bajo el enlace "Acerca" -->
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="#">Facturación</a>
+                        <a class="navbar-item" href="#">Envío</a>
+                        <a class="navbar-item" href="#">Devoluciones</a>
+                    </div>
+                </div>
                 <a class="navbar-item" href="#">Servicios</a>
                 <a class="navbar-item" href="#">Contacto</a>
             </div>
@@ -133,7 +143,7 @@
                                 </div>
                                 <div class="tab-content" id="imagenes-tab">
                                     <div class="columns is-multiline">
-                                        <!--Tarjetas para la organización de las imágenes cuya distribución va variando con el tamaño de la pantalla-->
+                                        <!--Tarjetas para la correcta distribución de las imágenes-->
                                         <div class="column is-6-desktop is-full-tablet is-full-mobile">
                                             <div class="card ">
                                                 <div class="card-image">
@@ -398,18 +408,14 @@
 
     <script>
         // Script para que funcione el menu burguer
-        document.addEventListener('DOMContentLoaded', () => {
-            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
+        document.addEventListener('DOMContentLoaded', function () {
+            var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
             if ($navbarBurgers.length > 0) {
-
-                $navbarBurgers.forEach(el => {
-                    el.addEventListener('click', () => {
-
-                        const target = el.dataset.target;
-                        const $target = document.getElementById(target);
-
-                        el.classList.toggle('is-active');
+                $navbarBurgers.forEach(function ($el) {
+                    $el.addEventListener('click', function () {
+                        var target = $el.dataset.target;
+                        var $target = document.getElementById(target);
+                        $el.classList.toggle('is-active');
                         $target.classList.toggle('is-active');
                     });
                 });
