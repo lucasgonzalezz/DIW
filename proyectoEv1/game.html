@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Game</title>
+
+    <!-- Favicon and e importaciones -->
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="css/mystyles.css">
@@ -17,8 +20,8 @@
     <!--Menu de tipo navbar-->
     <nav class="navbar is-primary has-shadow-rounded" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <!--Logotipo-->
-            <a class="navbar-item" href="#">
+            <!--Logotipo con enlace al home-->
+            <a class="navbar-item" href="./index.html">
                 <img src="./img/logo.png" style="max-height:40px;" alt="logotipo">
             </a>
 
@@ -34,7 +37,7 @@
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
                 <!--Links de navegacion-->
-                <a class="navbar-item" href="#">Home</a>
+                <a class="navbar-item" href="./index.html">Home</a>
                 <a class="navbar-item" href="#">Acerca</a>
                 <a class="navbar-item" href="#">Servicios</a>
                 <a class="navbar-item" href="#">Contacto</a>
@@ -44,7 +47,7 @@
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-primary" href="#">
+                        <a class="button is-primary has-background-grey-dark" href="#">
                             <strong>Sign up</strong>
                         </a>
                         <a class="button is-light" href="#">
@@ -57,17 +60,17 @@
     </nav>
     <!--Fin del navbar-->
 
-    <!--Contenedores con enlaces a informacion relevante, estruicturados en columnas-->
+    <!--Contenedores con enlaces a informacion relevante, estructurados en columnas-->
     <section class="section my-2">
         <div class="container">
             <div class="columns">
-                <div class="column has-background-primary has-text-centered p-5 m-3 box has-shadow-rounded">
+                <div class="column has-background-grey-dark has-text-centered p-5 m-3 box has-shadow-rounded">
                     <a href=""><span>Ultimas ofertas</span></a>
                 </div>
                 <div class="column has-background-primary has-text-centered p-5 m-3 box has-shadow-rounded">
                     <a href=""><span>TOP ventas</span></a>
                 </div>
-                <div class="column has-background-primary has-text-centered p-5 m-3 box has-shadow-rounded">
+                <div class="column has-background-grey-light has-text-centered p-5 m-3 box has-shadow-rounded">
                     <a href="">Noticias<span></span></a>
                 </div>
             </div>
@@ -76,119 +79,250 @@
     <!--Fin de los contenedores-->
 
     <!--Inicio de la seccion principal (esta hecha de forma que se adapte a los 3 tipos de vistas)-->
-    <section class="section my-2 is-4-desktop is-8-tablet is-12-mobile">
+    <section class="section my-2">
         <div class="container">
-            <!--Inicio buscador-->
             <div class="columns is-9">
-                <div class="column mx-3">
-                    <!--Inicio cards-->
-                    <div class="columns is-multiline is-vcentered my-2 is-half-tablet is-12-mobile">
-                        <div class="column has-text-centered is-6-tablet is-4-desktop">
-                            <div class="card p-2">
-                                <!--Imagen de la card (esta es la unica que tiene enlace)-->
-                                <div class="card-image">
-                                    <a href="game.html">
-                                        <figure class="image is-4by6">
-                                            <img src="./img/fc24.avif" alt="FC24">
-                                        </figure>
-                                    </a>
+                <div class="column">
+                    <div class="columns is-multiline is-vcentered my-2">
+                        <!--Columna izquierda con los tabs-->
+                        <div class="column">
+                            <div class="column is-11">
+                                <div class="tabs is-centered">
+                                    <ul class="tabs-menu">
+                                        <!--Aquí están los tabs que se seleccionan-->
+                                        <li class="is-active" data-target="descripcion-tab"><a>Descripción</a></li>
+                                        <li data-target="imagenes-tab"><a>Imágenes</a></li>
+                                        <li data-target="venta-tab"><a>Vender</a></li>
+                                        <li data-target="compra-tab"><a>Comprar</a></li>
+                                        <li data-target="video-tab"><a>Trailers</a></li>
+                                    </ul>
                                 </div>
-                                <!--Cotenido principal de la card-->
-                                <div class="card-content">
-                                    <div class="media">
-                                        <div class="media-content">
-                                            <!--Titulo de la card-->
-                                            <p class="title is-4">
-                                                FC 24 <a href="game.html">
-                                                    <!--Icono con enlace a la info del videojuego-->
-                                                    <span class="icon has-text-info">
-                                                        <i class="fas fa-info-circle"></i>
-                                                    </span>
-                                                </a>
-                                            </p>
-                                            <!--Precio del videojuego-->
-                                            <div class="content has-text-grey">
-                                                <div class="level">
-                                                    <div class="level-left">
-                                                        <p class="level-item">Venta</p>
-                                                    </div>
-                                                    <div class="level-right">
-                                                        <p class="level-item">50.00€</p>
-                                                    </div>
+                                <!--Aquí está el contenido de los tabs-->
+                                <div class="tab-content" id="descripcion-tab">
+                                    <p class="title is-4">
+                                        FC 24
+                                    </p>
+                                    <h1 class="subtitle has-text-dark">The World's Game</h1>
+                                    <p class="text has-text-grey">'EA Sports FC 24'1 es un videojuego de fútbol,
+                                        desarrollado por EA, y publicado por EA Sports. Este juego marca la primera
+                                        entrega de la serie EA Sports FC,2 tras la conclusión de la asociación de EA
+                                        con FIFA.13 Fue lanzado a nivel mundial el 29 de septiembre de 2023 para
+                                        Nintendo Switch, PlayStation 4, PlayStation 5, Windows, Xbox One y Xbox Series
+                                        X/S.4</p>
+                                    <br>
+                                    <h1 class="subtitle has-text-dark">Caracteírticas</h1>
+                                    <p class="text has-text-grey">La versión para Nintendo Switch del juego se ejecuta
+                                        por primera vez en el motor de juego Frostbite, proporcionando una jugabilidad
+                                        similar a las versiones del juego para PlayStation 4 y Xbox One. Las ediciones
+                                        para Switch desde FIFA 20 habían sido ampliamente criticadas por ser lanzadas
+                                        como Legacy Editions; versiones del juego en las que se actualizaban los
+                                        uniformes, plantillas y estadios con respecto a la versión anterior, pero no se
+                                        añadían nuevas características de jugabilidad. EA Sports FC 24 introduce una
+                                        experiencia completa de Ultimate Team y VOLTA Football en la Switch. A pesar de
+                                        esto, no admite juego cruzado con PlayStation 4 ni Xbox One.
+                                    </p>
+                                    <br>
+                                    <h1 class="subtitle has-text-dark">HyperMotion V</h1>
+                                    <p class="text has-text-grey">EA Sports FC 24 presenta la tecnología "HyperMotion
+                                        V", que utiliza datos volumétricos capturados por cámaras alrededor de los
+                                        estadios en más de 180 partidos de alto nivel, incluyendo la UEFA Champions
+                                        League, la UEFA Women's Champions League, la Premier League y La Liga. Los datos
+                                        de "Advanced 11v11 Match Capture" se utilizan para enseñar a los algoritmos de
+                                        aprendizaje automático propietarios de EA Sports FC, lo que resulta en más de
+                                        11,000 animaciones en el juego en comparación con más de 6,000 en FIFA 23.</p>
+                                </div>
+                                <div class="tab-content" id="imagenes-tab">
+                                    <div class="columns is-multiline">
+                                        <!--Tarjetas para la organización de las imágenes cuya distribución va variando con el tamaño de la pantalla-->
+                                        <div class="column is-6-desktop is-full-tablet is-full-mobile">
+                                            <div class="card ">
+                                                <div class="card-image">
+                                                    <figure class="image is-5by3">
+                                                        <img src="img/fc1.png" alt="Image FC24">
+                                                    </figure>
                                                 </div>
-                                                <div class="level">
-                                                    <div class="level-left">
-                                                        <p class="level-item">Compra</p>
-                                                    </div>
-                                                    <div class="level-right">
-                                                        <p class="level-item">35.00€</p>
-                                                    </div>
+                                            </div>
+                                        </div><br>
+                                        <div class="column is-6-desktop is-full-tablet is-full-mobile">
+                                            <div class="card">
+                                                <div class="card-image">
+                                                    <figure class="image is-5by3">
+                                                        <img src="img/fc2.jpg" alt="Image FC24">
+                                                    </figure>
                                                 </div>
-                                                <div class="level">
-                                                    <div class="level-left">
-                                                        <p class="level-item">Intercambio</p>
-                                                    </div>
-                                                    <div class="level-right">
-                                                        <p class="level-item">25.00€</p>
-                                                    </div>
+                                            </div>
+                                        </div> <br>
+                                        <div class="column is-6-desktop is-full-tablet is-full-mobile">
+                                            <div class="card">
+                                                <div class="card-image">
+                                                    <figure class="image is-5by3">
+                                                        <img src="img/fc3.jpg" alt="Image FC24">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div><br>
+                                        <div class="column is-6-desktop is-full-tablet is-full-mobile">
+                                            <div class="card">
+                                                <div class="card-image">
+                                                    <figure class="image is-5by3">
+                                                        <img src="img/fc4.jpg" alt="Image FC24">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column is-6-desktop is-full-tablet is-full-mobile">
+                                            <div class="card">
+                                                <div class="card-image">
+                                                    <figure class="image is-5by3">
+                                                        <img src="img/fc5.jpg" alt="Image FC24">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column is-6-desktop is-full-tablet is-full-mobile">
+                                            <div class="card">
+                                                <div class="card-image">
+                                                    <figure class="image is-5by3">
+                                                        <img src="img/fc6.png" alt="Image FC24">
+                                                    </figure>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!--Botones de la card-->
-                                    <div class="content">
-                                        <button class="button has-background-grey-dark mx-2">Vender</button>
-                                        <button class="button has-background-grey-light mx-2">Comprar</button>
+                                </div>
+                                <div class="tab-content" id="venta-tab">
+                                    <div class="card-content">
+                                        <div class="media">
+                                            <div class="media-content">
+                                                <p class="title is-4">
+                                                    FC 24
+                                                </p>
+                                                <div class="content has-text-grey">
+                                                    <div class="level ">
+                                                        <div class="level-left">
+                                                            <p class="level-item">Vender</p>
+                                                        </div>
+                                                        <div class="level-right">
+                                                            <p class="level-item">35.00€</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="level">
+                                                        <div class="level-left">
+                                                            <p class="level-item">Intercambiar</p>
+                                                        </div>
+                                                        <div class="level-right">
+                                                            <p class="level-item">25.00€</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="content is-vcentered">
+                                            <button class="button has-background-primary ">Vender</button>
+                                            <button class="button has-background-grey-light ">Intercambiar</button>
+                                            <div class="notification mt-4"><button class="delete"
+                                                    onclick="this.parentElement.style.display='none'"></button>
+                                                Asegúrate de que los juegos que vas a vender estén en buenas
+                                                condiciones!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-content" id="compra-tab">
+                                    <div class="card-content">
+                                        <div class="media">
+                                            <div class="media-content">
+                                                <p class="title is-4">
+                                                    FC 24
+                                                </p>
+                                                <div class="content has-text-grey">
+                                                    <div class="level">
+                                                        <div class="level-left">
+                                                            <p class="level-item">Comprar</p>
+                                                        </div>
+                                                        <div class="level-right">
+                                                            <p class="level-item">50.00€</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="content is-vcentered">
+                                            <button class="button has-background-primary">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Trailers del juego (Bulma no tiene esta opción así que lo implemento de la forma que conozco)-->
+                                <div class="tab-content" id="video-tab">
+                                    <div class="has-text-centered">
+                                        <h1 class="subtitle">FC 24 Tráilers</h1>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xUrYmYvJ6jo"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                        <br>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/vvrZxBne81o"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                        <br>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/N91EB85mq4E"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!--Fin de la card-->
                     </div>
                 </div>
-                <!--Fin de las cards-->
+                <!--Final tabs-->
 
-                <!--Inicio cajas con información adiciona a modo de enlaces rapidos a otras seciones de la web-->
-                <div class="column is-3 is-hidden-touch">
-                    <div class="box">
-                        <h1 class="subtitle has-background-info box has-text-info-light">
-                            Cesta de compra
-                        </h1>
-                        <p class="has-background-primary box is-justified has-text-white">
-                            La cesta de compra está vacía
-                        </p>
-                    </div>
-                    <div class="box">
-                        <h1 class="subtitle has-background-info box has-text-info-light">
-                            Cesta de venta
-                        </h1>
-                        <p class="has-background-primary box is-justified has-text-white">
-                            No has añadido ningún atículo a la venta
-                        </p>
-                    </div>
-                    <div class="box">
-                        <p class="subtitle has-background-info box has-text-white">
-                            Noticias destacadas
-                        </p>
-                        <p class="has-background-primary box is-justified has-text-white">
-                            Participa en el sorteo de un juego gratis resgistrandote en nuestra web
-                        </p>
-                        <p class="has-background-primary box is-justified has-text-white">
-                            Ofertas que no te puedes perder por navidad
-                        </p>
-                        </p>
-                        <p class="has-background-primary box is-justified has-text-white">
-                            Descubre las tendencias de los videojuegos para el próximo año
-                        </p>
-                        <p class="has-background-primary box is-justified has-text-white">
-                            Consejos para mejorar tu experiencia de juego en línea
-                        </p>
-                        <p class="has-background-primary box is-justified has-text-white">
-                            Reseña de los juegos más esperados de la temporada
-                        </p>
-                    </div>
-                </div>
-                <!--Fin de las cajas-->
+ <!--Inicio cajas con información adiciona a modo de enlaces rapidos a otras seciones de la web-->
+ <div class="column is-3 is-hidden-touch">
+    <div class="box">
+        <h1 class="subtitle has-background-grey-dark box has-text-info-light">
+            Cesta de compra
+        </h1>
+        <p class="has-background-primary box is-justified has-text-white">
+            La cesta de compra está vacía
+        </p>
+    </div>
+    <div class="box">
+        <h1 class="subtitle has-background-grey-dark box has-text-info-light">
+            Cesta de venta
+        </h1>
+        <p class="has-background-primary box is-justified has-text-white">
+            No has añadido ningún atículo a la venta
+        </p>
+    </div>
+    <div class="box">
+        <p class="subtitle has-background-grey-dark box has-text-white">
+            Noticias destacadas
+        </p>
+        <p class="has-background-primary box is-justified has-text-white">
+            Participa en el sorteo de un juego gratis resgistrandote en nuestra web
+        </p>
+        <p class="has-background-primary box is-justified has-text-white">
+            Ofertas que no te puedes perder por navidad
+        </p>
+        </p>
+        <p class="has-background-primary box is-justified has-text-white">
+            Descubre las tendencias de los videojuegos para el próximo año
+        </p>
+        <p class="has-background-primary box is-justified has-text-white">
+            Consejos para mejorar tu experiencia de juego en línea
+        </p>
+        <p class="has-background-primary box is-justified has-text-white">
+            Reseña de los juegos más esperados de la temporada
+        </p>
+    </div>
+</div>
+<!--Fin de las cajas-->
+            </div>
         </div>
     </section>
     <!--Fin de la seccion principal-->
@@ -223,19 +357,19 @@
                 <div class="level">
                     <div class="level-left">
                         <p class="level-item"><a href=""><img
-                                    src="https://cdn.icon-icons.com/icons2/674/PNG/512/Visa_icon-icons.com_60549.png"
+                                    src="./img/visa.png"
                                     class="icon is-large"></a></p>
                         <p class="level-item"><a href=""><img
-                                    src="https://cdn.icon-icons.com/icons2/1320/PNG/512/-mastercard_86833.png"
+                                    src="./img/master.png"
                                     class="icon is-large"></a></p>
                         <p class="level-item"><a href=""><img
-                                    src="https://cdn-icons-png.flaticon.com/512/6124/6124998.png"
+                                    src="./img/gpay.png"
                                     class="icon is-large"></a></p>
                         <p class="level-item"><a href=""><img
-                                    src="https://cdn-icons-png.flaticon.com/512/5968/5968279.png"
+                                    src="./img/apay.png"
                                     class="icon is-large"></a></p>
                         <p class="level-item"><a href=""><img
-                                    src="https://cdn.icon-icons.com/icons2/674/PNG/512/Paypal-39_icon-icons.com_60555.png"
+                                    src="./img/paypal.png"
                                     class="icon is-large"></a></p>
                     </div>
                     <!--Y las redes sociales a la derecha-->
@@ -262,8 +396,8 @@
         </section>
     </footer>
 
-    <!--Script para que funcione el menu burguer-->
     <script>
+        // Script para que funcione el menu burguer
         document.addEventListener('DOMContentLoaded', () => {
             const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
@@ -280,6 +414,38 @@
                     });
                 });
             }
+        });
+
+        // Script para que funcionen los tabs
+        const tabSystem = {
+            init() {
+                document.querySelectorAll('.tabs-menu').forEach(tabMenu => {
+                    Array.from(tabMenu.children).forEach((child, ind) => {
+                        child.addEventListener('click', () => {
+                            tabSystem.toggle(child.dataset.target);
+                        });
+                        if (child.className.includes('is-active')) {
+                            tabSystem.toggle(child.dataset.target);
+                        }
+                    });
+                });
+            },
+            toggle(targetId) {
+                document.querySelectorAll('.tab-content').forEach(contentElement => {
+                    contentElement.style.display = contentElement.id === targetId ? 'block' : 'none';
+                    document.querySelector(`[data-target="${contentElement.id}"]`).classList[contentElement.id === targetId ? 'add' : 'remove']('is-active');
+                })
+            },
+        };
+        tabSystem.init();
+
+        // Secript para cerrar la notificacion
+        (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+            const $notification = $delete.parentNode;
+
+            $delete.addEventListener('click', () => {
+                $notification.parentNode.removeChild($notification);
+            });
         });
     </script>
 

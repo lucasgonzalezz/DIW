@@ -1,37 +1,31 @@
+// mystyles.scss
 @charset "utf-8";
 
 // Importa la fuente de Google
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 @import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
 
-// Define tus colores
+// Variables de colores
 $orange: #da791ff1;
-$pink: #FA7C91;
-$brown: #757763;
-$beige-light: #D0D1CD;
-$beige-lighter: #EFF0EB;
+$dark-orange: #8a4a0df1;
+$light-orange: #cd813ae2;
 $white: #FFFFFF;
+$beige-lighter: #EFF0EB;
 
-// Actualiza las variables globales de Bulma
+// Variables globales de Bulma
 $family-sans-serif: 'McLaren', sans-serif;
-$grey-dark: $orange;
-$grey-light: $orange;
+$grey-dark: $dark-orange;
+$grey-light: $light-orange;
 $primary: $orange;
 $link: $beige-lighter;
-$i: $white;
-$subtitle: $white;
 $has-text-white: $white;
 
-// Actualiza algunas variables de componentes de Bulma
+// Variables de componentes de Bulma
 $body-background-color: $beige-lighter;
 $control-border-width: 2px;
 $input-border-color: transparent;
-$input-shadow: none;
 $has-background-primary: $primary;
 
-
-// Importa solo lo que necesitas de Bulma
-
+// Imports Bulma
 @import "./utilities/_all.sass";
 @import "./base/_all.sass";
 @import "./layout/_all.sass";
@@ -40,3 +34,12 @@ $has-background-primary: $primary;
 @import "./form/_all.sass";
 @import "./components/_all.sass";
 @import "./grid/_all.sass";
+
+// Regla adicionale para cambiar el color del texto en el is-active
+.tabs-menu {
+    li.is-active {
+        a {
+            color: black !important;
+        }
+    }
+}
