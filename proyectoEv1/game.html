@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+
+<body>
+
+    <!--Menu de tipo navbar-->
+    <nav class="navbar is-primary has-shadow-rounded" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <!--Logotipo-->
+            <a class="navbar-item" href="#">
+                <img src="./img/logo.png" style="max-height:40px;" alt="logotipo">
+            </a>
+
+            <!--Menu burger para la navegacion movil-->
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <!--Links de navegacion-->
+                <a class="navbar-item" href="#">Home</a>
+                <a class="navbar-item" href="#">Acerca</a>
+                <a class="navbar-item" href="#">Servicios</a>
+                <a class="navbar-item" href="#">Contacto</a>
+            </div>
+
+            <!--Items de sign up y logo in-->
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary" href="#">
+                            <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light" href="#">
+                            <strong>Log in</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Fin del navbar-->
+
+    <!--Contenedores con enlaces a informacion relevante, estruicturados en columnas-->
+    <section class="section my-2">
+        <div class="container">
+            <div class="columns">
+                <div class="column has-background-primary has-text-centered p-5 m-3 box has-shadow-rounded">
+                    <a href=""><span>Ultimas ofertas</span></a>
+                </div>
+                <div class="column has-background-primary has-text-centered p-5 m-3 box has-shadow-rounded">
+                    <a href=""><span>TOP ventas</span></a>
+                </div>
+                <div class="column has-background-primary has-text-centered p-5 m-3 box has-shadow-rounded">
+                    <a href="">Noticias<span></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Fin de los contenedores-->
+
+    <!--Inicio de la seccion principal (esta hecha de forma que se adapte a los 3 tipos de vistas)-->
+    <section class="section my-2 is-4-desktop is-8-tablet is-12-mobile">
+        <div class="container">
+            <!--Inicio buscador-->
+            <div class="columns is-9">
+                <div class="column mx-3">
+                    <!--Inicio cards-->
+                    <div class="columns is-multiline is-vcentered my-2 is-half-tablet is-12-mobile">
+                        <div class="column has-text-centered is-6-tablet is-4-desktop">
+                            <div class="card p-2">
+                                <!--Imagen de la card (esta es la unica que tiene enlace)-->
+                                <div class="card-image">
+                                    <a href="game.html">
+                                        <figure class="image is-4by6">
+                                            <img src="./img/fc24.avif" alt="FC24">
+                                        </figure>
+                                    </a>
+                                </div>
+                                <!--Cotenido principal de la card-->
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-content">
+                                            <!--Titulo de la card-->
+                                            <p class="title is-4">
+                                                FC 24 <a href="game.html">
+                                                    <!--Icono con enlace a la info del videojuego-->
+                                                    <span class="icon has-text-info">
+                                                        <i class="fas fa-info-circle"></i>
+                                                    </span>
+                                                </a>
+                                            </p>
+                                            <!--Precio del videojuego-->
+                                            <div class="content has-text-grey">
+                                                <div class="level">
+                                                    <div class="level-left">
+                                                        <p class="level-item">Venta</p>
+                                                    </div>
+                                                    <div class="level-right">
+                                                        <p class="level-item">50.00€</p>
+                                                    </div>
+                                                </div>
+                                                <div class="level">
+                                                    <div class="level-left">
+                                                        <p class="level-item">Compra</p>
+                                                    </div>
+                                                    <div class="level-right">
+                                                        <p class="level-item">35.00€</p>
+                                                    </div>
+                                                </div>
+                                                <div class="level">
+                                                    <div class="level-left">
+                                                        <p class="level-item">Intercambio</p>
+                                                    </div>
+                                                    <div class="level-right">
+                                                        <p class="level-item">25.00€</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Botones de la card-->
+                                    <div class="content">
+                                        <button class="button has-background-grey-dark mx-2">Vender</button>
+                                        <button class="button has-background-grey-light mx-2">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Fin de la card-->
+                    </div>
+                </div>
+                <!--Fin de las cards-->
+
+                <!--Inicio cajas con información adiciona a modo de enlaces rapidos a otras seciones de la web-->
+                <div class="column is-3 is-hidden-touch">
+                    <div class="box">
+                        <h1 class="subtitle has-background-info box has-text-info-light">
+                            Cesta de compra
+                        </h1>
+                        <p class="has-background-primary box is-justified has-text-white">
+                            La cesta de compra está vacía
+                        </p>
+                    </div>
+                    <div class="box">
+                        <h1 class="subtitle has-background-info box has-text-info-light">
+                            Cesta de venta
+                        </h1>
+                        <p class="has-background-primary box is-justified has-text-white">
+                            No has añadido ningún atículo a la venta
+                        </p>
+                    </div>
+                    <div class="box">
+                        <p class="subtitle has-background-info box has-text-white">
+                            Noticias destacadas
+                        </p>
+                        <p class="has-background-primary box is-justified has-text-white">
+                            Participa en el sorteo de un juego gratis resgistrandote en nuestra web
+                        </p>
+                        <p class="has-background-primary box is-justified has-text-white">
+                            Ofertas que no te puedes perder por navidad
+                        </p>
+                        </p>
+                        <p class="has-background-primary box is-justified has-text-white">
+                            Descubre las tendencias de los videojuegos para el próximo año
+                        </p>
+                        <p class="has-background-primary box is-justified has-text-white">
+                            Consejos para mejorar tu experiencia de juego en línea
+                        </p>
+                        <p class="has-background-primary box is-justified has-text-white">
+                            Reseña de los juegos más esperados de la temporada
+                        </p>
+                    </div>
+                </div>
+                <!--Fin de las cajas-->
+        </div>
+    </section>
+    <!--Fin de la seccion principal-->
+
+    <!--Inicio del footer-->
+    <footer class="has-text-centered footer has-background-primary">
+        <section class="section my2">
+            <!--Contenedor con los enlaces a los terminos, condiciones y demas-->
+            <div class="container">
+                <div class="columns">
+                    <div class="column has-text-centered p-5 m-3">
+                        <a href="">Términos</a>
+                    </div>
+                    <div class="column has-text-centered p-5 m-3">
+                        <a href="">Condiciones</a>
+                    </div>
+                    <div class="column has-text-centered p-5 m-3">
+                        <a href="">Privacidad</a>
+                    </div>
+                    <div class="column has-text-centered p-5 m-3">
+                        <a href="">Métodos de pago</a>
+                    </div>
+                    <div class="column has-text-centered p-5 m-3">
+                        <a href="">Restricciones de edad</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Contenedor con los metodos de pago y las redes sociales-->
+            <div class="container">
+                <!--Level para separar los metodos de pago a la izquierda-->
+                <div class="level">
+                    <div class="level-left">
+                        <p class="level-item"><a href=""><img
+                                    src="https://cdn.icon-icons.com/icons2/674/PNG/512/Visa_icon-icons.com_60549.png"
+                                    class="icon is-large"></a></p>
+                        <p class="level-item"><a href=""><img
+                                    src="https://cdn.icon-icons.com/icons2/1320/PNG/512/-mastercard_86833.png"
+                                    class="icon is-large"></a></p>
+                        <p class="level-item"><a href=""><img
+                                    src="https://cdn-icons-png.flaticon.com/512/6124/6124998.png"
+                                    class="icon is-large"></a></p>
+                        <p class="level-item"><a href=""><img
+                                    src="https://cdn-icons-png.flaticon.com/512/5968/5968279.png"
+                                    class="icon is-large"></a></p>
+                        <p class="level-item"><a href=""><img
+                                    src="https://cdn.icon-icons.com/icons2/674/PNG/512/Paypal-39_icon-icons.com_60555.png"
+                                    class="icon is-large"></a></p>
+                    </div>
+                    <!--Y las redes sociales a la derecha-->
+                    <div class="level-right">
+                        <p class="level-item"><a href="#" class="icon is-large is-primary">
+                                <i class="fab fa-facebook fa-2x"></i>
+                            </a></p>
+                        <p class="level-item"> <a href="#" class="icon is-large">
+                                <i class="fab fa-twitter fa-2x"></i>
+                            </a></p>
+                        <p class="level-item"> <a href="#" class="icon is-large">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a></p>
+                        <p class="level-item"> <a href="#" class="icon is-large">
+                                <i class="fab fa-youtube fa-2x"></i>
+                            </a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Seccion con el copyright-->
+        <section>
+            <strong>Proyecto Ev1 &copy; 2023. Todos los derechos reservados -> By Lucas González</strong>
+        </section>
+    </footer>
+
+    <!--Script para que funcione el menu burguer-->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            if ($navbarBurgers.length > 0) {
+
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>
