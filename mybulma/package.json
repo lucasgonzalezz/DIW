@@ -1,0 +1,18 @@
+{
+  "name": "mybulma",
+  "version": "1.0.0",
+  "main": "mystyles.scss",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url mystyles.scss css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch",
+    "css-build-compress": "node-sass --output-style compressed --omit-source-map-url mystyles.scss css/mystyles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bulma": "^0.9.4",
+    "node-sass": "^9.0.0",
+    "tar": "^6.1.10"
+  }
+}
