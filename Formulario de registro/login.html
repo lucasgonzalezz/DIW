@@ -10,6 +10,7 @@
     <!-- Inclusión de jQuery y el script personalizado -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="./script.js"></script>
+    <!-- Enlace a la hoja de estilo CSS -->
     <link rel="stylesheet" href="css/mystyles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -196,18 +197,19 @@
                 <hr class="login-hr">
                 <p class="has-text-black has-text-centered mb-4">Complete el formulario a continuación <i
                         class="fas fa-arrow-down"></i></p>
-
                 <!-- Formulario de registro -->
                 <form>
+                    <!-- Campo de entrada de nombre de usuario -->
                     <div class="field is-size-5">
                         <p>Nombre</p>
                         <input class="input is-large is-hovered" type="name" placeholder="Nombre" autofocus="" required>
                     </div>
+                    <!-- Campo de entrada de apellido de usuario -->
                     <div class="field is-size-5">
                         <p>Apellido</p>
                         <input class="input is-large is-hovered" type="apellido" placeholder="Apellido">
                     </div>
-                    <!-- Campo de entrada de nombre de usuario -->
+                    <!-- Campo de entrada de fecha de nacimiento de usuario -->
                     <div class="field is-size-5">
                         <p>Fecha de nacimiento</p>
                         <div class="control has-icons-left">
@@ -217,7 +219,7 @@
                             </span>
                         </div>
                     </div>
-                    <!-- Campo de entrada de nombre de usuario -->
+                    <!-- Campo de entrada de edad de usuario -->
                     <div class="field is-size-5">
                         <p>Edad</p>
                         <div class="control has-icons-left">
@@ -258,6 +260,7 @@
                             </span>
                         </div>
                     </div>
+                    <!-- Combo de sexo del usuario -->
                     <div class="field is-size-5">
                         <p>Selecciona tu sexo</p>
                         <div class="select is-primary">
@@ -268,40 +271,44 @@
                             </select>
                         </div>
                     </div>
+                    <!-- Text area de observaciones del usuario -->
                     <div class="field is-size-5">
                         <p>Observaciones</p>
                         <textarea class="textarea is-primary" placeholder="¿Quieres comentar alguna cosa?"></textarea>
                     </div>
+                    <!-- Checknox de terminos del usuario -->
                     <div class="field is-size-5">
                         <label class="checkbox">
                             <input type="checkbox">
                             Estoy de acuerdo con los terminos y condiciones de uso.
                         </label>
                     </div>
+                    <!-- Radio buttons de ofertas para el usuario -->
                     <div class="field is-size-5">
                         <p>¿Desea recibir ofertas?</p>
                     </div>
                     <div class="control">
                         <label class="radio">
-                          <input type="radio" name="answer">
-                          Si
+                            <input type="radio" name="answer">
+                            Si
                         </label>
                         <label class="radio">
-                          <input type="radio" name="answer">
-                          No
+                            <input type="radio" name="answer">
+                            No
                         </label>
-                      </div>
+                    </div>
                     <!-- Botón de registro -->
                     <div class="has-text-centered">
                         <button class="button is-black is-large">
                             Registrarse <i class="fas fa-user-plus ml-2"></i>
                         </button>
+                        <!-- Botón de cancelar registro -->
                         <button class="button is-black is-large" id="cancelButtonModal">Cancelar
                             <i class="fa fa-sign-in" aria-hidden="true"></i>
                         </button>
                     </div>
                 </form>
-                <!-- Enlaces adicionales (puedes personalizar según tus necesidades) -->
+                <!-- Enlace para ir a iniciar sesión si ya tienes cuenta (No funcional) -->
                 <div class="has-text-centered mt-4">
                     <p class="has-text-black">
                         <a href="#" class="is-size-6" id="loginLink">¿Ya tienes una cuenta? Inicia sesión</a>

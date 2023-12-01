@@ -44,12 +44,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-      // Función para cerrar el modal al hacer clic en el botón "Cancelar"
-      document.getElementById('cancelButtonModal').addEventListener('click', function () {
-        // Encuentra el modal por su ID y ciérralo
-        var modal = document.getElementById('modal-js-registro');
-        modal.classList.remove('is-active');
-    });
+  // Función para cerrar el modal al hacer clic en el botón "Cancelar"
+  document.getElementById('cancelButtonModal').addEventListener('click', function () {
+    // Encuentra el modal por su ID y ciérralo
+    var modal = document.getElementById('modal-js-registro');
+    modal.classList.remove('is-active');
+  });
 
   // Agrega un evento de clic en varios elementos secundarios para cerrar el modal padre
   (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
