@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login bulma</title>
+    <!-- Enlace a la hoja de estilo de Bulma -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
+    <!-- Inclusión de jQuery y el script personalizado -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar is-primary has-shadow" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <!-- Logo y nombre del sitio -->
+            <a class="navbar-item title mt-4" href="#">
+                <img src="./logo.png" alt="Logo" style="max-height: 2em;">
+                RICK & MORTY
+            </a>
+            <!-- Botón para el menú en dispositivos móviles -->
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <!-- Menú de navegación -->
+        <div id="navbar" class="navbar-menu is-warning has-shadow">
+            <div class="navbar-end">
+                <!-- Enlaces a las secciones del sitio -->
+                <a class="navbar-item is-size-5" href="#">
+                    INICIO
+                </a>
+                <!-- Menú desplegable de episodios -->
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link is-size-5">
+                        EPISODIOS
+                    </a>
+                    <div class="navbar-dropdown">
+                        <!-- Enlaces a episodios -->
+                        <a class="navbar-item" href="#">
+                            EP.1
+                        </a>
+                        <a class="navbar-item" href="#">
+                            EP.2
+                        </a>
+                        <a class="navbar-item" href="#">
+                            EP.3
+                        </a>
+                        <a class="navbar-item" href="#">
+                            EP.4
+                        </a>
+                        <a class="navbar-item" href="#">
+                            EP.5
+                        </a>
+                        <a class="navbar-item" href="#">
+                            EP.6
+                        </a>
+                    </div>
+                </div>
+                <!-- Menú desplegable de temporadas -->
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link is-size-5">
+                        TEMPORADAS
+                    </a>
+                    <div class="navbar-dropdown">
+                        <!-- Enlaces a temporadas -->
+                        <a class="navbar-item" href="#">
+                            Temporada 1
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Temporada 2
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Temporada 3
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Temporada 4
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Temporada 5
+                        </a>
+                        <a class="navbar-item" href="#">
+                            Temporada 6
+                        </a>
+                    </div>
+                </div>
+                <!-- Enlace de contacto -->
+                <a class="navbar-item is-size-5" href="#">
+                    CONTACTO
+                </a>
+                <!-- Enlace de inicio de sesión con modal -->
+                <a class="navbar-item is-size-5 js-modal-trigger" data-target="modal-js-login">
+                    LOGIN
+                </a>
+                <!-- Enlace de resgistro con modal -->
+                <a class="navbar-item is-size-5 js-modal-trigger" data-target="modal-js-registro">
+                    REGISTRO
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal de inicio de sesión -->
+    <div id="modal-js-login" class="modal">
+        <!-- Fondo del modal -->
+        <div class="modal-background"></div>
+        <!-- Contenido del modal -->
+        <div class="modal-content">
+            <!-- Caja con el formulario de inicio de sesión -->
+            <div class="box has-background-primary">
+                <h1 class="title has-text-black has-text-centered">LOGIN</h1>
+                <hr class="login-hr">
+                <p class="has-text-black has-text-centered mb-4">Introduzca sus datos abajo <i
+                        class="fas fa-arrow-down"></i></p>
+
+                <!-- Formulario de inicio de sesión -->
+                <form>
+                    <!-- Campo de entrada de correo electrónico -->
+                    <div class="field">
+                        <div class="control has-icons-left">
+                            <input class="input is-large is-hovered" type="email" placeholder="email" autofocus=""
+                                required>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Campo de entrada de nombre de usuario -->
+                    <div class="field">
+                        <div class="control has-icons-left">
+                            <input class="input is-large is-hovered" type="username" placeholder="username" required>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Campo de entrada de contraseña -->
+                    <div class="field">
+                        <div class="control has-icons-left">
+                            <input class="input is-large is-hovered" type="password" placeholder="password" required>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-lock"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Opción para recordar la sesión -->
+                    <div class="field has-text-centered">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="is-size-5 ml-2">Recordar</span>
+                        </label>
+                    </div>
+                    <!-- Botón de acceso -->
+                    <div class="has-text-centered">
+                        <button class="button is-black is-large">
+                            Acceder <i class="fas fa-sign-in-alt ml-2"></i>
+                        </button>
+                    </div>
+                </form>
+                <!-- Enlaces adicionales (crear cuenta, olvidar contraseña, ayuda) -->
+                <div class="has-text-centered mt-4">
+                    <p class="has-text-black">
+                        <a href="" class="is-size-6">Crear cuenta</a>
+                        <span class="is-size-6">|</span>
+                        <a href="" class="is-size-6">He olvidado la contraseña</a>
+                        <span class="is-size-6">|</span>
+                        <a href="" class="is-size-6">¿Necesita ayuda?</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Botón para cerrar el modal -->
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <!-- Modal de registro -->
+    <div id="modal-js-registro" class="modal">
+        <!-- Fondo del modal -->
+        <div class="modal-background"></div>
+        <!-- Contenido del modal -->
+        <div class="modal-content">
+            <!-- Caja con el formulario de registro -->
+            <div class="box has-background-primary">
+                <h1 class="title has-text-black has-text-centered">REGISTRO</h1>
+                <hr class="login-hr">
+                <p class="has-text-black has-text-centered mb-4">Complete el formulario a continuación <i
+                        class="fas fa-arrow-down"></i></p>
+
+                <!-- Formulario de registro -->
+                <form>
+                    <div class="field is-size-5">
+                        <p>Nombre</p>
+                        <input class="input is-large is-hovered" type="name" placeholder="Nombre" autofocus="" required>
+                    </div>
+                    <div class="field is-size-5">
+                        <p>Apellido</p>
+                        <input class="input is-large is-hovered" type="apellido" placeholder="Apellido">
+                    </div>
+                    <!-- Campo de entrada de nombre de usuario -->
+                    <div class="field is-size-5">
+                        <p>Fecha de nacimiento</p>
+                        <div class="control has-icons-left">
+                            <input class="input is-large is-hovered" type="date" placeholder="Nacimiento" required>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-birthday-cake"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Campo de entrada de nombre de usuario -->
+                    <div class="field is-size-5">
+                        <p>Edad</p>
+                        <div class="control has-icons-left">
+                            <input class="input is-large is-hovered" type="number" placeholder="Edad" min="0">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-hashtag"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Campo de entrada de correo electrónico -->
+                    <div class="field is-size-5">
+                        <p>Correo electrónico</p>
+                        <div class="control has-icons-left">
+                            <input class="input is-large is-hovered" type="email" placeholder="Correo electrónico"
+                                required>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Campo de entrada de nombre de usuario -->
+                    <div class="field is-size-5">
+                        <p>Username</p>
+                        <div class="control has-icons-left">
+                            <input class="input is-large is-hovered" type="text" placeholder="Username" required>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Campo de entrada de contraseña -->
+                    <div class="field is-size-5">
+                        <p>Contraseña</p>
+                        <div class="control has-icons-left">
+                            <input class="input is-large is-hovered" type="password" placeholder="Contraseña" required>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-lock"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field is-size-5">
+                        <p>Selecciona tu sexo</p>
+                        <div class="select is-primary">
+                            <select>
+                                <option>Mujer</option>
+                                <option>Hombre</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="field is-size-5">
+                        <p>Observaciones</p>
+                        <textarea class="textarea is-primary" placeholder="¿Quieres comentar alguna cosa?"></textarea>
+                    </div>
+                    <div class="field is-size-5">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            Estoy de acuerdo con los terminos y condiciones de uso.
+                        </label>
+                    </div>
+                    <div class="field is-size-5">
+                        <p>¿Desea recibir ofertas?</p>
+                    </div>
+                    <div class="control">
+                        <label class="radio">
+                          <input type="radio" name="answer">
+                          Si
+                        </label>
+                        <label class="radio">
+                          <input type="radio" name="answer">
+                          No
+                        </label>
+                      </div>
+                    <!-- Botón de registro -->
+                    <div class="has-text-centered">
+                        <button class="button is-black is-large">
+                            Registrarse <i class="fas fa-user-plus ml-2"></i>
+                        </button>
+                        <button class="button is-black is-large" id="cancelButtonModal">Cancelar
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </form>
+                <!-- Enlaces adicionales (puedes personalizar según tus necesidades) -->
+                <div class="has-text-centered mt-4">
+                    <p class="has-text-black">
+                        <a href="#" class="is-size-6" id="loginLink">¿Ya tienes una cuenta? Inicia sesión</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Botón para cerrar el modal -->
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+
+    <section class="section">
+        <!-- Filas centradas con tres columnas -->
+        <div class="columns is-centered mt-4">
+            <div class="column is-2"></div>
+            <!-- Primera columna con información de Rick -->
+            <div class="column">
+                <h1 class="title is-size-1 has-text-centered">Rick</h1>
+                <img src="./morty.png" style="max-height: 20em;">
+                <p class="has-text-centered mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eros
+                    nibh,
+                    porttitor sit amet hendrerit sit amet, sollicitudin vel velit. Vestibulum maximus orci et erat
+                    fermentum tempus. Vestibulum eget ipsum quis nibh hendrerit fringilla eget sit amet lorem.
+                    Maecenas tellus diam, facilisis quis interdum vitae, luctus at neque. Nunc mollis magna at dui
+                    faucibus sagittis. </p>
+            </div>
+            <!-- Segunda columna con información adicional -->
+            <div class="column">
+                <h1 class="title is-size-1 has-text-centered">and</h1>
+                <img src="./morty.png" style="max-height: 20em;">
+                <p class="has-text-centered mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eros
+                    nibh,
+                    porttitor sit amet hendrerit sit amet, sollicitudin vel velit. Vestibulum maximus orci et erat
+                    fermentum tempus. Vestibulum eget ipsum quis nibh hendrerit fringilla eget sit amet lorem.
+                    Maecenas tellus diam, facilisis quis interdum vitae, luctus at neque. Nunc mollis magna at dui
+                    faucibus sagittis. </p>
+            </div>
+            <!-- Tercera columna con información de Morty -->
+            <div class="column">
+                <h1 class="title is-size-1 has-text-centered">Morty</h1>
+                <img src="./morty.png" style="max-height: 20em;">
+                <p class="has-text-centered mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eros
+                    nibh,
+                    porttitor sit amet hendrerit sit amet, sollicitudin vel velit. Vestibulum maximus orci et erat
+                    fermentum tempus. Vestibulum eget ipsum quis nibh hendrerit fringilla eget sit amet lorem.
+                    Maecenas tellus diam, facilisis quis interdum vitae, luctus at neque. Nunc mollis magna at dui
+                    faucibus sagittis. </p>
+            </div>
+            <div class="column is-2"></div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer has-background-primary" style="height: 80px;">
+        <div class="content has-text-centered is-centered">
+            <!-- Información adicional y enlace externo -->
+            <p class="is-size-4 has-text-black">Para más información de Rick and Morty, visita la siguiente web: <a
+                    href="https://es.wikipedia.org/wiki/Rick_y_Morty" target="_blank"
+                    class="has-text-grey">Mortitas.com</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
